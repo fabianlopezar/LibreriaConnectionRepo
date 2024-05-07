@@ -39,5 +39,9 @@ namespace LibreriaConnection.models
             this.FechaCreacion = fechaCreacion;
         }
 
+        public Categorias(string nombreCategoria, string fechaCreacion) : this(nombreCategoria)
+        {
+            this.fechaCreacion = fechaCreacion;
+        }
     }
 }

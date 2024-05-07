@@ -26,5 +26,14 @@ namespace LibreriaConnection.controller
             result = objCBD.ExecuteQuery(sql);
             return result;
         }
+
+        internal bool InsertCategoria(Categorias objC)
+        {
+            bool result = false;
+            string sql = "insert into categorias (nombreCategoria, fechaCreacion) values('"+objC.NombreCategoria+"','"+objC.FechaCreacion+"');";
+            ConnectDB objCDB = new ConnectDB();
+            result = objCDB.ExecuteQuery(sql);
+            return result;
+        }
     }
 }

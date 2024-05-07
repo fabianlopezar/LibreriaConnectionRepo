@@ -68,3 +68,4 @@ D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\Libr
 D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.pdb
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCuentas.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateEditoriales.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCategoria.resources

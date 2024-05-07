@@ -13,7 +13,6 @@ namespace LibreriaConnection.models
         private string fechaDevolucion;
         private bool estaVencido;
         private int idCuentaPrestamo;
-        private int idLibroPrestamo;
 
         public Prestamos()
         {
@@ -30,14 +29,20 @@ namespace LibreriaConnection.models
             this.fechaPrestamo = fechaPrestamo;
         }
 
-        public Prestamos(int idPrestamo, string fechaPrestamo, string fechaDevolucion, bool estaVencido, int idCuentaPrestamo, int idLibroPrestamo)
+        public Prestamos(int idPrestamo, string fechaPrestamo, string fechaDevolucion, bool estaVencido, int idCuentaPrestamo)
         {
             this.idPrestamo = idPrestamo;
             this.fechaPrestamo = fechaPrestamo;
             this.fechaDevolucion = fechaDevolucion;
             this.estaVencido = estaVencido;
             this.idCuentaPrestamo = idCuentaPrestamo;
-            this.idLibroPrestamo = idLibroPrestamo;
+
         }
+
+        public int IdPrestamo { get => idPrestamo; set => idPrestamo = value; }
+        public string FechaPrestamo { get => fechaPrestamo; set => fechaPrestamo = value; }
+        public string FechaDevolucion { get => fechaDevolucion; set => fechaDevolucion = value; }
+        public bool EstaVencido { get => estaVencido; set => estaVencido = value; }
+        public int IdCuentaPrestamo { get => idCuentaPrestamo; set => idCuentaPrestamo = value; }
     }
 }
