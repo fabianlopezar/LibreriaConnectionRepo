@@ -18,7 +18,14 @@ namespace LibreriaConnection.models
      private string fechaNacimiento;
      private string contraseniaCuenta;
 
-
+        internal List<Cuentas> SelectCuenta(string sql)
+        {
+            List<Cuentas> listaCuentas = new List<Cuentas>();
+            try
+            {
+                MySqlCommand cmd = new MySql(sql, Data)// min 28:00
+            }
+        }
 
         public Cuentas()
         {

@@ -127,6 +127,12 @@
     <Compile Include="views\UIInsertCategoria.Designer.cs">
       <DependentUpon>UIInsertCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\UIInsertTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIInsertTelefono.Designer.cs">
+      <DependentUpon>UIInsertTelefono.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIUpdateCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="views\UIInsertCategoria.resx">
       <DependentUpon>UIInsertCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UIInsertTelefono.resx">
+      <DependentUpon>UIInsertTelefono.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIUpdateCategorias.resx">
       <DependentUpon>UIUpdateCategorias.cs</DependentUpon>

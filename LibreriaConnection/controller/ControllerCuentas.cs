@@ -13,9 +13,10 @@ namespace LibreriaConnection.controller
         internal List<Cuentas> SelectCuentas()
         {
             List<Cuentas> listaCuentas = null;
-            ConnectDB objCBD = new ConnectDB();
+           
             string sql = "select * from cuentas;";
-            listaCuentas = objCBD.SelectCuentas(sql);
+            Cuentas objCuenta = new Cuentas();
+            listaCuentas = objCuenta.SelectCuenta(sql);// video min
 
             return listaCuentas;
         }
