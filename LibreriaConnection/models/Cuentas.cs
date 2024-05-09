@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LibreriaConnection.models;
+using MySql.Data.MySqlClient;
 
 namespace LibreriaConnection.models
 {
@@ -26,7 +27,7 @@ namespace LibreriaConnection.models
             List<Cuentas> listaCuentas = new List<Cuentas>();
             try
             {
-                MySqlCommand cmd = new MySql(sql, objC.DataSource());
+                MySqlCommand cmd = new MySqlCommand(sql, objC.DataSource());
                 objC.ConnectOpened();
                 MySqlDataReader reader=cmd.ExecuteReader();
                 if (reader.HasRows)
@@ -36,7 +37,7 @@ namespace LibreriaConnection.models
                         int idCuenta=reader.GetInt32(0);
                         string nameC= reader.GetString(1);
                         Cuentas objCuenta= new Cuentas(idCuenta,nameC);
-                        listaCuentas.Add(objC);
+                        listaCuentas.Add(objCuenta);
                     }
                 }
             }
