@@ -69,3 +69,14 @@ D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\Libr
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCuentas.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateEditoriales.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCategoria.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.AssemblyReference.cache
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.Properties.Resources.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCategoria.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertTelefono.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCategorias.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCuentas.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateEditoriales.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.GenerateResource.cache
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CoreCompileInputs.cache
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.pdb

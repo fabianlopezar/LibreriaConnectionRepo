@@ -18,7 +18,8 @@ namespace LibreriaConnection
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new UIUpdateCategorias() /*Form1()*/);
-            Application.Run(new UIInsertCategoria() /*Form1()*/) ;
+            Application.Run(new UIInsertTelefono() /*Form1()*/) ;
+            //Application.Run(new UIInsertCategoria() /*Form1()*/) ;
             //Application.Run(new UIUpdateCuentas() /*Form1()*/);
             //Application.Run(new UIUpdateEditoriales() /*Form1()*/);
         }

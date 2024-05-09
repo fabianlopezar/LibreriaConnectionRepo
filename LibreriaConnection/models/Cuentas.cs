@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibreriaConnection.models;
 
 namespace LibreriaConnection.models
 {
@@ -17,14 +18,38 @@ namespace LibreriaConnection.models
      private string foto;
      private string fechaNacimiento;
      private string contraseniaCuenta;
+     ConnectDB objC= new ConnectDB();
+
 
         internal List<Cuentas> SelectCuenta(string sql)
         {
             List<Cuentas> listaCuentas = new List<Cuentas>();
             try
             {
-                MySqlCommand cmd = new MySql(sql, Data)// min 28:00
+                MySqlCommand cmd = new MySql(sql, objC.DataSource());
+                objC.ConnectOpened();
+                MySqlDataReader reader=cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int idCuenta=reader.GetInt32(0);
+                        string nameC= reader.GetString(1);
+                        Cuentas objCuenta= new Cuentas(idCuenta,nameC);
+                        listaCuentas.Add(objC);
+                    }
+                }
             }
+            catch(Exception e)
+            {
+                Console.WriteLine("Error en Cuenta: "+e.Message);
+                objC.ConnectClosed();
+            }
+            finally
+            {
+                objC.ConnectClosed();
+            }
+            return listaCuentas;
         }
 
         public Cuentas()
