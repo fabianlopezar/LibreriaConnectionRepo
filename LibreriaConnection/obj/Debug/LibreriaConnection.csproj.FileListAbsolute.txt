@@ -161,3 +161,4 @@ D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRep
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CopyComplete
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
