@@ -134,6 +134,12 @@
     <Compile Include="views\UIInsertCuenta.Designer.cs">
       <DependentUpon>UIInsertCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\UIInsertEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIInsertEditorial.Designer.cs">
+      <DependentUpon>UIInsertEditorial.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIInsertTelefono.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertCuenta.resx">
       <DependentUpon>UIInsertCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UIInsertEditorial.resx">
+      <DependentUpon>UIInsertEditorial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertTelefono.resx">
       <DependentUpon>UIInsertTelefono.cs</DependentUpon>
