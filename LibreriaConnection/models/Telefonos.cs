@@ -34,6 +34,11 @@ namespace LibreriaConnection.models
             this.IdCuentaTelefono = idCuentaTelefono;
         }
 
+        public Telefonos(string numeroTelefonico, int idCuentaTelefono) : this(numeroTelefonico)
+        {
+            this.idCuentaTelefono = idCuentaTelefono;
+        }
+
         public int IdTelefono { get => idTelefono; set => idTelefono = value; }
         public string NumeroTelefonico { get => numeroTelefonico; set => numeroTelefonico = value; }
         public int IdCuentaTelefono { get => idCuentaTelefono; set => idCuentaTelefono = value; }

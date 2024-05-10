@@ -101,6 +101,7 @@
     <Compile Include="controller\ControllerCategorias.cs" />
     <Compile Include="controller\ControllerCuentas.cs" />
     <Compile Include="controller\ControllerEditorial.cs" />
+    <Compile Include="controller\ControllerTelefono.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
