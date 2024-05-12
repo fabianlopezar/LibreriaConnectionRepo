@@ -13,7 +13,7 @@ namespace LibreriaConnection.models
         string server = "127.0.0.1;";
         string database = "libreria;";
         string user = "root;";
-        string pass = "root;";
+        string pass = "maxwell55A@;";
 
         public MySqlConnection DataSource()
         {

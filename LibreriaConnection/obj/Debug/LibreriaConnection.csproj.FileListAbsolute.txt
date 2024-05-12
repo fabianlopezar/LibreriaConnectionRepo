@@ -162,3 +162,8 @@ D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRep
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CopyComplete
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertTelefono.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAdministradores.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources

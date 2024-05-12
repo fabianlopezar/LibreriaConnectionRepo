@@ -15,7 +15,7 @@ namespace LibreriaConnection.models
         private string apellido2Autor;
         private string direccionAutor;
         private string telefonoAutor;
-        private string idCiudadAutor;
+        private int idCiudadAutor;
 
         public Autores()
         {
@@ -27,16 +27,15 @@ namespace LibreriaConnection.models
             this.Nombre1Autor = nombre1Autor;
         }
 
-        public Autores(int idAutor, string nombre1Autor, string nombre2Autor, string apellido1Autor, string apellido2Autor, string direccionAutor, string telefonoAutor, string idCiudadAutor)
+        public Autores(string nombre1Autor, string nombre2Autor, string apellido1Autor, string apellido2Autor, string direccionAutor, string telefonoAutor, int idCiudadAutor)
         {
-            this.IdAutor = idAutor;
-            this.Nombre1Autor = nombre1Autor;
-            this.Nombre2Autor = nombre2Autor;
-            this.Apellido1Autor = apellido1Autor;
-            this.Apellido2Autor = apellido2Autor;
-            this.DireccionAutor = direccionAutor;
-            this.TelefonoAutor = telefonoAutor;
-            this.IdCiudadAutor = idCiudadAutor;
+            this.nombre1Autor = nombre1Autor;
+            this.nombre2Autor = nombre2Autor;
+            this.apellido1Autor = apellido1Autor;
+            this.apellido2Autor = apellido2Autor;
+            this.direccionAutor = direccionAutor;
+            this.telefonoAutor = telefonoAutor;
+            this.idCiudadAutor = idCiudadAutor;
         }
 
         public int IdAutor { get => idAutor; set => idAutor = value; }
@@ -46,6 +45,6 @@ namespace LibreriaConnection.models
         public string Apellido2Autor { get => apellido2Autor; set => apellido2Autor = value; }
         public string DireccionAutor { get => direccionAutor; set => direccionAutor = value; }
         public string TelefonoAutor { get => telefonoAutor; set => telefonoAutor = value; }
-        public string IdCiudadAutor { get => idCiudadAutor; set => idCiudadAutor = value; }
+        public int IdCiudadAutor { get => idCiudadAutor; set => idCiudadAutor = value; }
     }
 }

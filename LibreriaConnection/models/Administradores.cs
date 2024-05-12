@@ -46,6 +46,15 @@ namespace LibreriaConnection.models
             this.contraseniaAdministrador = contraseniaAdministrador;
         }
 
+        public Administradores(string nombre1Administrador, string nombre2Administrador, string apellido1Administrador, string apellido2Administrador, string correo, string contraseniaAdministrador) : this(nombre1Administrador)
+        {
+            this.nombre2Administrador = nombre2Administrador;
+            this.apellido1Administrador = apellido1Administrador;
+            this.apellido2Administrador = apellido2Administrador;
+            this.correo = correo;
+            this.contraseniaAdministrador = contraseniaAdministrador;
+        }
+
         public Administradores()
         {
         }

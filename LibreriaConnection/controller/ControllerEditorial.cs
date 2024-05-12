@@ -25,5 +25,14 @@ namespace LibreriaConnection.controller
             result = objCBD.ExecuteQuery(sql);
             return result;
         }
+
+        internal bool InsertEditorial(Editoriales objEditorial)
+        {
+            bool result = false;
+            string sql = "insert into editoriales(nombreEditorial) values('"+objEditorial.NombreEditorial+"');";
+            ConnectDB objConnect = new ConnectDB();
+            result = objConnect.ExecuteQuery(sql);
+            return result;
+        }
     }
 }

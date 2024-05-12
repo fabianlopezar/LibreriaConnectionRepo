@@ -98,7 +98,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\ControllerAdministrador.cs" />
+    <Compile Include="controller\ControllerAutor.cs" />
     <Compile Include="controller\ControllerCategorias.cs" />
+    <Compile Include="controller\ControllerCiudad.cs" />
     <Compile Include="controller\ControllerCuentas.cs" />
     <Compile Include="controller\ControllerEditorial.cs" />
     <Compile Include="controller\ControllerTelefono.cs" />
@@ -122,6 +125,18 @@
     <Compile Include="models\Telefonos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\UIInsertAdministradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIInsertAdministradores.Designer.cs">
+      <DependentUpon>UIInsertAdministradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\UIInsertAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIInsertAutores.Designer.cs">
+      <DependentUpon>UIInsertAutores.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIInsertCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +188,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="views\UIInsertAdministradores.resx">
+      <DependentUpon>UIInsertAdministradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UIInsertAutores.resx">
+      <DependentUpon>UIInsertAutores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertCategoria.resx">
       <DependentUpon>UIInsertCategoria.cs</DependentUpon>
     </EmbeddedResource>
