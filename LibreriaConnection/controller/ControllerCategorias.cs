@@ -9,6 +9,14 @@ namespace LibreriaConnection.controller
 {
     class ControllerCategorias
     {
+        internal bool InsertCategoria(Categorias objC)
+        {
+            bool result = false;
+            string sql = "insert into categorias (nombreCategoria, fechaCreacion) values('" + objC.NombreCategoria + "','" + objC.FechaCreacion + "');";
+            ConnectDB objCDB = new ConnectDB();
+            result = objCDB.ExecuteQuery(sql);
+            return result;
+        }
         internal List<Categorias> SelectCategorias()
         {
             List<Categorias> listaC = null;
@@ -27,13 +35,6 @@ namespace LibreriaConnection.controller
             return result;
         }
 
-        internal bool InsertCategoria(Categorias objC)
-        {
-            bool result = false;
-            string sql = "insert into categorias (nombreCategoria, fechaCreacion) values('"+objC.NombreCategoria+"','"+objC.FechaCreacion+"');";
-            ConnectDB objCDB = new ConnectDB();
-            result = objCDB.ExecuteQuery(sql);
-            return result;
-        }
+       
     }
 }

@@ -21,7 +21,6 @@ namespace LibreriaConnection.controller
         internal List<Telefonos> SelectTelefonos()
         {
             List<Telefonos> listaTelefonos = null;
-
             string sql = "select * from telefonos;";
             Telefonos objTelefono = new Telefonos();
             listaTelefonos = objTelefono.SelectTelefono(sql);
