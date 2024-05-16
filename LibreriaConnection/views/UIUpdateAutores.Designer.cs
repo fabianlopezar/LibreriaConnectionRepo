@@ -206,6 +206,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(103, 33);
             this.comboBox2.TabIndex = 17;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.SelectItemCiudad);
             // 
             // label9
             // 
@@ -242,7 +243,7 @@
             this.Controls.Add(this.label2);
             this.Name = "UIUpdateAutores";
             this.Text = "s";
-            this.Load += new System.EventHandler(this.SelectAutor);
+            this.Load += new System.EventHandler(this.Selects);
             this.ResumeLayout(false);
             this.PerformLayout();
 
