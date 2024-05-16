@@ -161,6 +161,12 @@
     <Compile Include="views\UIInsertTelefono.Designer.cs">
       <DependentUpon>UIInsertTelefono.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\UIUpdateAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIUpdateAdministrador.Designer.cs">
+      <DependentUpon>UIUpdateAdministrador.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIUpdateAutores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertTelefono.resx">
       <DependentUpon>UIInsertTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UIUpdateAdministrador.resx">
+      <DependentUpon>UIUpdateAdministrador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIUpdateAutores.resx">
       <DependentUpon>UIUpdateAutores.cs</DependentUpon>

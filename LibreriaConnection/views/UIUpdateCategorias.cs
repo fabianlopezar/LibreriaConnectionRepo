@@ -12,7 +12,7 @@ using LibreriaConnection.controller;
 
 namespace LibreriaConnection.views
 {
-    
+
     public partial class UIUpdateCategorias : Form
     {
         List<Categorias> listaC;
@@ -58,7 +58,7 @@ namespace LibreriaConnection.views
                     idC = listaC[i].IdCategoria;
                 }
             }
-            Categorias objCategorias= new Categorias(idC,categoriaUpdate);
+            Categorias objCategorias = new Categorias(idC, categoriaUpdate);
             bool result = objCC.UpdateCategorias(objCategorias);
             if (result)
             {
@@ -73,7 +73,7 @@ namespace LibreriaConnection.views
         private void SelectItemV(object sender, EventArgs e)
         {
             textBox1.Text = comboBox1.GetItemText(comboBox1.SelectedItem);
-            categoriaOriginal= comboBox1.GetItemText(comboBox1.SelectedItem);
+            categoriaOriginal = comboBox1.GetItemText(comboBox1.SelectedItem);
         }
     }
 }
