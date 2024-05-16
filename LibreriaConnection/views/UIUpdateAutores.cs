@@ -62,5 +62,10 @@ namespace LibreriaConnection.views
             textBox1.Text = comboBox1.GetItemText(comboBox1.SelectedItem);
             autorOriginal = comboBox1.GetItemText(comboBox1.SelectedItem);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

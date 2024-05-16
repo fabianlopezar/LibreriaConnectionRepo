@@ -169,3 +169,8 @@ C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAdministradores.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
