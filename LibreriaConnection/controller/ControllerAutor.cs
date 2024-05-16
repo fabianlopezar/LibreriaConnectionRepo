@@ -32,7 +32,8 @@ namespace LibreriaConnection.controller
         {
             bool result = false;     
             //string sql = "UPDATE autores SET nombre1Autor='" + objAutor.Nombre1Autor + "', nombre2Autor='" + objAutor.Nombre2Autor + "', apellido1Autor='" + objAutor.Apellido1Autor + "', apellido2Autor='" + objAutor.Apellido2Autor + "', direccionAutor='" + objAutor.DireccionAutor + "', telefonoAutor='" + objAutor.TelefonoAutor + "' WHERE idAutor=" + objAutor.IdAutor;
-            string sql = "UPDATE autores SET nombre1Autor='" + objAutor.Nombre1Autor + "', nombre2Autor='" + objAutor.Nombre2Autor + "', apellido1Autor='" + objAutor.Apellido1Autor + "', apellido2Autor='" + objAutor.Apellido2Autor + "', direccionAutor='" + objAutor.DireccionAutor + "', telefonoAutor='" + objAutor.TelefonoAutor +"', idCiudadAutores='"+objAutor.IdCiudadAutor +"' WHERE idAutor=" + objAutor.IdAutor;
+            //string sql = "UPDATE autores SET nombre1Autor='" + objAutor.Nombre1Autor + "', nombre2Autor='" + objAutor.Nombre2Autor + "', apellido1Autor='" + objAutor.Apellido1Autor + "', apellido2Autor='" + objAutor.Apellido2Autor + "', direccionAutor='" + objAutor.DireccionAutor + "', telefonoAutor='" + objAutor.TelefonoAutor +"', idCiudadAutores='"+objAutor.IdCiudadAutor +"' WHERE idAutor=" + objAutor.IdAutor;
+            string sql = "UPDATE autores SET idCiudadAutores='"+objAutor.IdCiudadAutor +"' WHERE idAutor=" + objAutor.IdAutor;
 
             ConnectDB objConnect = new ConnectDB();
             result = objConnect.ExecuteQuery(sql);

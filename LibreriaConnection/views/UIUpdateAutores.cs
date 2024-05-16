@@ -62,7 +62,7 @@ namespace LibreriaConnection.views
             {
                 if (listaCiudades[i].NombreCiudad.Equals(ciudadEscojida))
                 {
-                    idCiudad = listaCiudades[i].IdCiudad;
+                    //idCiudad = listaCiudades[i].IdCiudad;
                 }
             }
             Autores objAutor = new Autores(idAutor, nombre1, nombre2, apellido1, apellido2, direccion, telefono, idCiudad);
