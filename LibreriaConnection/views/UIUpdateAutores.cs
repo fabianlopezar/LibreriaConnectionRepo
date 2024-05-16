@@ -25,7 +25,7 @@ namespace LibreriaConnection.views
             ControllerAutor objControllerAutor = new ControllerAutor();
             listaAutores = objControllerAutor.SelectAutores();
 
-            for (int i = 0; i < listaAutores.Count; i++)
+            for (int i = 0; i < listaAutores.Count; i++)// Llena el ComboBox de nombres 1.
             {
                 string autorNombre = listaAutores[i].Nombre1Autor;
                 comboBox1.Items.Add(autorNombre);
@@ -34,7 +34,12 @@ namespace LibreriaConnection.views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string autorUpdate = textBox1.Text;
+            string nombre1 = textBox1.Text;
+            string nombre2 = textBox2.Text;
+            string apellido1 = textBox3.Text;
+            string apellido2 = textBox4.Text;
+            string direccion = textBox5.Text;
+            string telefono = textBox6.Text;
             ControllerAutor objControllerAutor = new ControllerAutor();
             int idAutor = 0;
             for (int i = 0; i < listaAutores.Count; i++)
@@ -44,7 +49,7 @@ namespace LibreriaConnection.views
                     idAutor = listaAutores[i].IdAutor;
                 }
             }
-            Autores objAutor= new Autores(idAutor, autorUpdate);
+            Autores objAutor = new Autores(idAutor, nombre1,nombre2, apellido1,apellido2,direccion,telefono);
             bool result = objControllerAutor.UpdateAutor(objAutor);
             if (result)
             {
@@ -60,12 +65,48 @@ namespace LibreriaConnection.views
         private void SelectItem(object sender, EventArgs e)
         {
             textBox1.Text = comboBox1.GetItemText(comboBox1.SelectedItem);
+
+  
             autorOriginal = comboBox1.GetItemText(comboBox1.SelectedItem);
+            MostrarAtributos();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MostrarAtributos()
+        {
+            string autorEscojido = textBox1.Text;
+            //int idAutor = 0;
+            string nombre2 = "2";
+            string apellido1 = "";
+            string apellido2 = "";
+            string direccion = "";
+            string telefono = "";
+            int idCiudad = 0;
+
+
+            for (int i = 0; i < listaAutores.Count; i++)// Recorre la lista de autores.
+            {
+                if (autorEscojido.Equals(listaAutores[i].Nombre1Autor))// Si autorUpdate es igual al de la lista ejecute.
+                {
+                    nombre2 = listaAutores[i].Nombre2Autor;
+                    apellido1 = listaAutores[i].Apellido1Autor;
+                    apellido2 = listaAutores[i].Apellido2Autor;
+                    direccion = listaAutores[i].DireccionAutor;
+                    telefono = listaAutores[i].TelefonoAutor;                   
+                }
+            }
+
+            textBox2.Text = nombre2;
+            textBox3.Text = apellido1;
+            textBox4.Text = apellido2;
+            textBox5.Text = direccion;
+            textBox6.Text = telefono;
+            //Console.WriteLine("soy nombre 2: " + nombre2);
+            
         }
     }
 }

@@ -38,6 +38,25 @@ namespace LibreriaConnection.models
             this.idCiudadAutor = idCiudadAutor;
         }
 
+        public Autores(int idAutor, string nombre1Autor, string nombre2Autor, string apellido1Autor, string apellido2Autor, string direccionAutor, string telefonoAutor, int idCiudadAutor) : this(idAutor, nombre1Autor)
+        {
+            this.nombre2Autor = nombre2Autor;
+            this.apellido1Autor = apellido1Autor;
+            this.apellido2Autor = apellido2Autor;
+            this.direccionAutor = direccionAutor;
+            this.telefonoAutor = telefonoAutor;
+            this.idCiudadAutor = idCiudadAutor;
+        }
+
+        public Autores(int idAutor, string nombre1Autor, string nombre2Autor, string apellido1Autor, string apellido2Autor, string direccionAutor, string telefonoAutor) : this(idAutor, nombre1Autor)
+        {
+            this.nombre2Autor = nombre2Autor;
+            this.apellido1Autor = apellido1Autor;
+            this.apellido2Autor = apellido2Autor;
+            this.direccionAutor = direccionAutor;
+            this.telefonoAutor = telefonoAutor;
+        }
+
         public int IdAutor { get => idAutor; set => idAutor = value; }
         public string Nombre1Autor { get => nombre1Autor; set => nombre1Autor = value; }
         public string Nombre2Autor { get => nombre2Autor; set => nombre2Autor = value; }

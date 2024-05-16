@@ -287,9 +287,16 @@ namespace LibreriaConnection.models
                 {
                     while (reader.Read())
                     {
-                        int _idAutor = reader.GetInt32(0);
-                        string _nombre1Autor = reader.GetString(1);
-                        listaAutores.Add(new Autores(_idAutor, _nombre1Autor));
+                        int idAutor = reader.GetInt32(0);
+                        string nombre1 = reader.GetString(1);
+                        string nombre2 = reader.GetString(2);
+                        string apellido1 = reader.GetString(3);
+                        string apellido2 = reader.GetString(4);
+                        string direccion = reader.GetString(5);
+                        string telefono = reader.GetString(6);
+                        int idCiudad = reader.GetInt32(7);
+
+                        listaAutores.Add(new Autores(idAutor, nombre1, nombre2, apellido1, apellido2, direccion, telefono, idCiudad));
                     }
                 }
             }

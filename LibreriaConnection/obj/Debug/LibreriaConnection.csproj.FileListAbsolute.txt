@@ -174,3 +174,9 @@ D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRep
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
 D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAdministradores.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
