@@ -180,3 +180,5 @@ D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnec
 D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
 D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
 D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAdministrador.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertLibro.resources

@@ -23,10 +23,12 @@ namespace LibreriaConnection
             //Application.Run(new UIInsertEditorial() ) ;
             //Application.Run(new UIInsertAdministradores()) ;
             //Application.Run(new UIInsertAutores()) ;
-            Application.Run(new UIUpdateAutores()) ;
+            //Application.Run(new UIUpdateAutores()) ;
             //Application.Run(new UIInsertCategoria() /*Form1()*/) ;
             //Application.Run(new UIUpdateCuentas() /*Form1()*/);
             //Application.Run(new UIUpdateEditoriales() /*Form1()*/);
+            Application.Run(new PrincipalAdministrador() );
+            
         }
     }
 }

@@ -19,5 +19,13 @@ namespace LibreriaConnection.controller
             result = objConnect.ExecuteQuery(sql);
             return result;
         }
+        internal List<Administradores> SelectAdministradores()
+        {
+            List<Administradores> listaAdministradores = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = "select * from administradores";
+            listaAdministradores = connect.SelectAdministradores(sql);
+            return listaAdministradores;
+        }
     }
 }
