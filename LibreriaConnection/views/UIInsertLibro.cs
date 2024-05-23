@@ -12,7 +12,7 @@ using LibreriaConnection.controller;
 
 namespace LibreriaConnection.views
 {
-    public partial class UIInsertLibro : Form// video 37:00
+    public partial class UIInsertLibro : Form
     {
         List<Editoriales> listaEditoriales;
         List<Categorias> listaCategorias;

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using LibreriaConnection.models;
 namespace LibreriaConnection.controller
 {
-    class ControllerLibro 
+    class ControllerLibro //min 42
     {
-      
+
         internal List<Libros> SelectLibros()
         {
             List<Libros> listaLibros = null;
@@ -21,7 +21,8 @@ namespace LibreriaConnection.controller
         internal bool InsertLibroImage(Libros objLibro)
         {
             bool result = false;
-            string sql = "insert into libros(titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro) values";
+            //                                                                                                                                                                     titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro                                                               
+            string sql = "insert into libros(titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro) values('" + objLibro.Titulo + "', '" + objLibro.Imagen + "', '" + objLibro.CodigoISBN + "', '" + objLibro.Disponible + "', " + objLibro.CantidadEjemplares + ", '" + objLibro.FechaCreacion + "', " + objLibro.IdEditorialLibro + ", " + objLibro.IdCategoriaLibro + ", " + objLibro.IdAdministradorLibro + ");";
             return result;
         }
     }
