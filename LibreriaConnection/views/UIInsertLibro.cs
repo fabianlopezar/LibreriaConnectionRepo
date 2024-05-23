@@ -12,13 +12,18 @@ using LibreriaConnection.controller;
 
 namespace LibreriaConnection.views
 {
-    public partial class UIInsertLibro : Form// video 26:00
+    public partial class UIInsertLibro : Form// video 37:00
     {
         List<Editoriales> listaEditoriales;
         List<Categorias> listaCategorias;
         List<Administradores> listaAdministradores;
         string rutaImagen;
         string dateString;
+
+        string nombreEditorial;
+        string nombreCategoria;
+        string nombreAdministrador;
+
         public UIInsertLibro()
         {
             InitializeComponent();
@@ -26,7 +31,6 @@ namespace LibreriaConnection.views
 
         private void Selects(object sender, EventArgs e)
         {
-            Console.WriteLine("deberia funcionar");
             ControllerEditorial controllerEditorial = new ControllerEditorial();
             listaEditoriales = controllerEditorial.SelectEditoriales();
             for (int i = 0; i < listaEditoriales.Count; i++)
@@ -55,14 +59,38 @@ namespace LibreriaConnection.views
             string imagen = rutaImagen;
             string codigoISBN = textBox2.Text;
             bool disponible = checkBox1.Checked;
-            string cantidadEjemplares = textBox2.Text;
-            string fechaCreacion = rutaImagen;
-            int idEditorial;
-            int idCategoria;
-            int idAdministrador;
+            int cantidadEjemplares = Int32.Parse(textBox2.Text);
+            string fechaCreacion = dateString;
+            int idEditorial = 0;
+            int idCategoria = 0;
+            int idAdministrador = 0;
             
-
-
+            #region Bucles For 
+            for (int i = 0; i < listaEditoriales.Count; i++)
+            {
+                if (nombreEditorial.Equals(listaEditoriales[i].NombreEditorial))
+                {
+                    idEditorial = listaEditoriales[i].IdEditorial;
+                }
+            }
+            for (int i = 0; i < listaCategorias.Count; i++)
+            {
+                if (nombreCategoria.Equals(listaCategorias[i].NombreCategoria))
+                {
+                    idCategoria = listaCategorias[i].IdCategoria;
+                }
+            }
+            for (int i = 0; i < listaAdministradores.Count; i++)
+            {
+                if (nombreAdministrador.Equals(listaAdministradores[i].Nombre1Administrador))
+                {
+                    idAdministrador = listaAdministradores[i].IdAdministrador;
+                }
+            }
+            #endregion
+            Libros objLibro = new Libros(title, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorial, idCategoria, idAdministrador);
+            ControllerLibro controllerLibro = new ControllerLibro();
+            bool result = controllerLibro.InsertLibroImage(objLibro);
 
         }
 

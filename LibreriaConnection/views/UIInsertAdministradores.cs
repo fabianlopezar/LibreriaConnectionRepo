@@ -42,5 +42,10 @@ namespace LibreriaConnection.views
 
             }
         }
+
+        private void UIInsertAdministradores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

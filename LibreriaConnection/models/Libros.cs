@@ -49,6 +49,18 @@ namespace LibreriaConnection.models
             this.idAdministradorLibro = idAdministradorLibro;
         }
 
+        public Libros(string titulo, string imagen, string codigoISBN, bool disponible, int cantidadEjemplares, string fechaCreacion, int idEditorialLibro, int idCategoriaLibro, int idAdministradorLibro) : this(titulo)
+        {
+            this.imagen = imagen;
+            this.codigoISBN = codigoISBN;
+            this.disponible = disponible;
+            this.cantidadEjemplares = cantidadEjemplares;
+            this.fechaCreacion = fechaCreacion;
+            this.idEditorialLibro = idEditorialLibro;
+            this.idCategoriaLibro = idCategoriaLibro;
+            this.idAdministradorLibro = idAdministradorLibro;
+        }
+
         public int IdLibro { get => idLibro; set => idLibro = value; }
         public string Titulo { get => titulo; set => titulo = value; }
         public string Imagen { get => imagen; set => imagen = value; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using LibreriaConnection.models;
 namespace LibreriaConnection.controller
 {
-    class ControllerLibro
+    class ControllerLibro 
     {
       
         internal List<Libros> SelectLibros()
@@ -17,6 +17,12 @@ namespace LibreriaConnection.controller
             listaLibros = connect.SelectLibros(sql);
             return listaLibros;
         }
-      
+
+        internal bool InsertLibroImage(Libros objLibro)
+        {
+            bool result = false;
+            string sql = "insert into libros(titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro) values";
+            return result;
+        }
     }
 }
