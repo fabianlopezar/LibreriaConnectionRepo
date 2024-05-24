@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace LibreriaConnection.models
         string server = "127.0.0.1;";
         string database = "libreria;";
         string user = "root;";
-        string pass = "maxwell55A@;";
+        string pass = "root;";
 
         public MySqlConnection DataSource()
         {
@@ -49,6 +50,45 @@ namespace LibreriaConnection.models
             }
             return listaC;
         }
+
+        internal bool ExecuteQueryImage(string sql, string imagen)
+        {
+            bool result = false;
+            FileStream fs;
+            BinaryReader br;
+            try
+            {
+                byte[] ImageData;
+                fs = new FileStream(imagen, FileMode.Open, FileAccess.Read);
+                br = new BinaryReader(fs);
+                ImageData = br.ReadBytes((int)fs.Length);
+                br.Close();
+                fs.Close();
+
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                cmd = new MySqlCommand(sql, DataSource());
+                cmd.Parameters.Add("@fotoLibro", MySqlDbType.LongBlob);
+                cmd.Parameters["@fotoLibro"].Value = ImageData;
+                ConnectOpened();
+                int RowsAffected = cmd.ExecuteNonQuery();
+                if (RowsAffected > 0)
+                {
+                    result = true;
+                }
+            }
+            catch (Exception w)
+            {
+                Console.WriteLine("Error en ConnectDB: " + w.Message);
+                ConnectClosed();
+            }
+            finally
+            {
+                ConnectClosed();
+
+            }
+            return result;
+        }
+
         internal List<Cuentas> SelectCuentas(string sql)
         {
             List<Cuentas> listaCuentas = new List<Cuentas>();

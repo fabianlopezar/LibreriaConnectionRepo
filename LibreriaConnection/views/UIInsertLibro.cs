@@ -33,23 +33,24 @@ namespace LibreriaConnection.views
         {
             ControllerEditorial controllerEditorial = new ControllerEditorial();
             listaEditoriales = controllerEditorial.SelectEditoriales();
+            
             for (int i = 0; i < listaEditoriales.Count; i++)
             {
-                comboBox1.Items.Add(listaEditoriales[i].IdEditorial);
+                comboBox1.Items.Add(listaEditoriales[i].NombreEditorial);
             }
 
             ControllerCategorias controllerCategoria = new ControllerCategorias();
             listaCategorias = controllerCategoria.SelectCategorias();
             for (int i = 0; i < listaCategorias.Count; i++)
             {
-                comboBox3.Items.Add(listaCategorias[i].IdCategoria);
+                comboBox3.Items.Add(listaCategorias[i].NombreCategoria);
             }
 
             ControllerAdministrador controllerAdministrador = new ControllerAdministrador();
             listaAdministradores = controllerAdministrador.SelectAdministradores();
             for (int i = 0; i < listaAdministradores.Count; i++)
             {
-                comboBox4.Items.Add(listaAdministradores[i].IdAdministrador);
+                comboBox4.Items.Add(listaAdministradores[i].Nombre1Administrador);
             }
         }
 
@@ -58,13 +59,17 @@ namespace LibreriaConnection.views
             string title = textBox1.Text;
             string imagen = rutaImagen;
             string codigoISBN = textBox2.Text;
+
             bool disponible = checkBox1.Checked;
-            int cantidadEjemplares = Int32.Parse(textBox2.Text);
+            
+            
+            int cantidadEjemplares = Int32.Parse(textBox3.Text);
             string fechaCreacion = dateString;
             int idEditorial = 0;
             int idCategoria = 0;
             int idAdministrador = 0;
-            
+
+
             #region Bucles For 
             for (int i = 0; i < listaEditoriales.Count; i++)
             {
@@ -91,6 +96,14 @@ namespace LibreriaConnection.views
             Libros objLibro = new Libros(title, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorial, idCategoria, idAdministrador);
             ControllerLibro controllerLibro = new ControllerLibro();
             bool result = controllerLibro.InsertLibroImage(objLibro);
+            if (result)
+            {
+                MessageBox.Show("Libro Insert Correct");
+            }
+            else
+            {
+                MessageBox.Show("Libro Insert Incorrect");
+            }
 
         }
 
@@ -119,5 +132,26 @@ namespace LibreriaConnection.views
             dateString = date.ToString("yyyy-MM-dd");
 
         }
+
+        private void EditorialSeleccionado(object sender, EventArgs e)
+        {
+            nombreEditorial = comboBox1.GetItemText(comboBox1.SelectedItem);
+        }
+
+        private void CategoriaSeleccionada(object sender, EventArgs e)
+        {
+            nombreCategoria = comboBox3.GetItemText(comboBox3.SelectedItem);
+        }
+
+        private void AdministradorSeleccionado(object sender, EventArgs e)
+        {
+            nombreAdministrador = comboBox4.GetItemText(comboBox4.SelectedItem);
+        }
+        /*
+private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+{
+nombreCiudad = comboBox2.GetItemText(comboBox2.SelectedItem);
+}
+*/
     }
 }

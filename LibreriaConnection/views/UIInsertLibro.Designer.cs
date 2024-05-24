@@ -195,6 +195,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 32);
             this.comboBox1.TabIndex = 87;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.EditorialSeleccionado);
             // 
             // comboBox3
             // 
@@ -204,6 +205,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 32);
             this.comboBox3.TabIndex = 88;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.CategoriaSeleccionada);
             // 
             // comboBox4
             // 
@@ -213,6 +215,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 32);
             this.comboBox4.TabIndex = 89;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.AdministradorSeleccionado);
             // 
             // textBox3
             // 
