@@ -1,0 +1,186 @@
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\LibreriaConnection.exe.config
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\LibreriaConnection.exe
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\LibreriaConnection.pdb
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\Google.Protobuf.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\MySql.Data.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Buffers.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.IO.Pipelines.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Memory.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\ZstdSharp.dll
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\Google.Protobuf.pdb
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\Google.Protobuf.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\MySql.Data.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Buffers.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.IO.Pipelines.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Memory.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.csprojAssemblyReference.cache
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.Properties.Resources.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCategorias.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.GenerateResource.cache
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CoreCompileInputs.cache
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CopyComplete
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.exe
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.pdb
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\LibreriaConnection.exe.config
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\LibreriaConnection.pdb
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.Buffers.dll
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.Numerics.Vectors.dll
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\Google.Protobuf.pdb
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\Google.Protobuf.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\MySql.Data.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.IO.Pipelines.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.Memory.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.AssemblyReference.cache
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.Properties.Resources.resources
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCategorias.resources
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.GenerateResource.cache
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CoreCompileInputs.cache
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CopyComplete
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\proyecto\LibreriaConnection\obj\Debug\LibreriaConnection.pdb
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCuentas.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateEditoriales.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCategoria.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.AssemblyReference.cache
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.Properties.Resources.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCategoria.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertTelefono.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCategorias.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCuentas.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateEditoriales.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.GenerateResource.cache
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CoreCompileInputs.cache
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.pdb
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\LibreriaConnection.exe.config
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\LibreriaConnection.pdb
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Google.Protobuf.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\MySql.Data.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Buffers.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.IO.Pipelines.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Memory.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Numerics.Vectors.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\ZstdSharp.dll
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Google.Protobuf.pdb
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Google.Protobuf.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\MySql.Data.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Buffers.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.IO.Pipelines.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Memory.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Numerics.Vectors.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.AssemblyReference.cache
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.Properties.Resources.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCategoria.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertTelefono.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCategorias.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateCuentas.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateEditoriales.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.GenerateResource.cache
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CoreCompileInputs.cache
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CopyComplete
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.pdb
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\LibreriaConnection.exe.config
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\LibreriaConnection.exe
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\LibreriaConnection.pdb
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Google.Protobuf.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\MySql.Data.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Buffers.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.IO.Pipelines.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Memory.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Numerics.Vectors.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\ZstdSharp.dll
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Google.Protobuf.pdb
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Google.Protobuf.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\K4os.Hash.xxHash.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\MySql.Data.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Buffers.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.IO.Pipelines.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Memory.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Numerics.Vectors.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.csproj.CopyComplete
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertTelefono.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAdministradores.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAdministradores.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\Libreriavisualstudio\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAdministradores.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertAutores.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertCuenta.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertEditorial.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateAutores.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAdministrador.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertLibro.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAdministrador.resources
+D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIInsertLibro.resources
