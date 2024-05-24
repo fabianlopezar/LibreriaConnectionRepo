@@ -76,5 +76,10 @@ namespace LibreriaConnection.views
                 comboBox2.Items.Add(listaCiudades[j].NombreCiudad);
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

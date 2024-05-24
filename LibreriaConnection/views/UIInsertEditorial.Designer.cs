@@ -38,11 +38,11 @@ namespace LibreriaConnection.views
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(340, 264);
+            this.button2.Location = new System.Drawing.Point(164, 216);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 50);
+            this.button2.Size = new System.Drawing.Size(120, 33);
             this.button2.TabIndex = 49;
-            this.button2.Text = "Insert";
+            this.button2.Text = "Insertar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -50,7 +50,7 @@ namespace LibreriaConnection.views
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(151, 208);
+            this.label2.Location = new System.Drawing.Point(126, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 24);
             this.label2.TabIndex = 35;
@@ -59,26 +59,26 @@ namespace LibreriaConnection.views
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(354, 208);
+            this.textBox1.Location = new System.Drawing.Point(140, 142);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 29);
+            this.textBox1.Size = new System.Drawing.Size(172, 29);
             this.textBox1.TabIndex = 34;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(302, 38);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(40, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 42);
+            this.label1.Size = new System.Drawing.Size(390, 55);
             this.label1.TabIndex = 33;
-            this.label1.Text = "Insert Editorial";
+            this.label1.Text = "Insertar Editorial";
             // 
             // UIInsertEditorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(455, 283);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
