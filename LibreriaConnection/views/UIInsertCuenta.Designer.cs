@@ -217,6 +217,7 @@ namespace LibreriaConnection.views
             this.button2.TabIndex = 32;
             this.button2.Text = "Insertar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // UIInsertCuenta
             // 
@@ -242,6 +243,7 @@ namespace LibreriaConnection.views
             this.Controls.Add(this.label1);
             this.Name = "UIInsertCuenta";
             this.Text = "UIInsertCuenta";
+            this.Load += new System.EventHandler(this.UIInsertCuenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

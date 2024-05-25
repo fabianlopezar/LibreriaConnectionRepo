@@ -14,7 +14,7 @@ namespace LibreriaConnection.models
         string server = "127.0.0.1;";
         string database = "libreria;";
         string user = "root;";
-        string pass = "root;";
+        string pass = "maxwell55A@;";
 
         public MySqlConnection DataSource()
         {
@@ -303,6 +303,21 @@ namespace LibreriaConnection.models
                     {
                         int _idLibro = reader.GetInt32(0);
                         string _titulo = reader.GetString(1);
+                        /*string _imagen = reader.GetString(2);
+                        string _codigoISBN = reader.GetString(3);
+                        string _disponible = reader.GetString(4);
+                        int _cantidadEjemplares = reader.GetInt32(5);
+                        string _fechaCreacion = reader.GetString(6);
+                        int _idEditorialLibro= reader.GetInt32(7);
+                        int _idCategoria= reader.GetInt32(8);
+                        int _idAdministrador= reader.GetInt32(9);
+                        bool disponible = false;
+                        if (_disponible.Equals(1))
+                        {
+                            disponible = true;
+                        }*/
+
+                        //listaLibros.Add(new Libros(_idLibro, _titulo,_imagen,_codigoISBN,disponible,_cantidadEjemplares,_fechaCreacion,_idEditorialLibro, _idCategoria, _idAdministrador));
                         listaLibros.Add(new Libros(_idLibro, _titulo));
                     }
                 }

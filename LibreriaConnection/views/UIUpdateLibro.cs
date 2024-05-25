@@ -21,9 +21,10 @@ namespace LibreriaConnection.views
         List<Administradores> listaAdministradores;
 
         string libroOriginal;
-        string editorialEscogido;
-        string categoriaEscogida;
-        string administradorEscogido;
+        string editorialSeleccionado;
+        string categoriaSeleccionado;
+        string administradorSeleccionado;
+        string fechaSeleccionada;
 
         public UIUpdateLibro()
         {
@@ -104,6 +105,72 @@ namespace LibreriaConnection.views
             textBox2.Text = codigoISBN;
             textBox3.Text = "" + cantidadEjemplares;
 
+        }
+
+        private void UpdateLibroBtn(object sender, EventArgs e)
+        {
+            ControllerLibro controllerLibro = new ControllerLibro();
+            string title = textBox1.Text;
+            string codigoIsbn = textBox2.Text;
+            int cantidadEjemplares = Int32.Parse(textBox2.Text);
+
+            int idLibro = 0;
+            int idEditorial = 0;
+            int idCategoria = 0;
+            int idAdministrador = 0;
+            #region Bucles For 
+            for (int i = 0; i < listaEditoriales.Count; i++)
+            {
+                if (editorialSeleccionado.Equals(listaEditoriales[i].NombreEditorial))
+                {
+                    idEditorial = listaEditoriales[i].IdEditorial;
+                }
+            }
+            for (int i = 0; i < listaCategorias.Count; i++)
+            {
+                if (categoriaSeleccionado.Equals(listaCategorias[i].NombreCategoria))
+                {
+                    idCategoria = listaCategorias[i].IdCategoria;
+                }
+            }
+            for (int i = 0; i < listaAdministradores.Count; i++)
+            {
+                if (administradorSeleccionado.Equals(listaAdministradores[i].Nombre1Administrador))
+                {
+                    idAdministrador = listaAdministradores[i].IdAdministrador;
+                }
+            }
+
+            for (int i = 0; i < listaLibros.Count; i++)
+            {
+                if (listaLibros[i].Titulo.Equals(libroOriginal))
+                {
+                    idLibro = listaLibros[i].IdLibro;
+                }
+            }
+            #endregion
+
+        }
+
+        private void EditorialSeleccionado(object sender, EventArgs e)
+        {
+            editorialSeleccionado = comboBox1.GetItemText(comboBox1.SelectedItem);
+        }
+
+        private void CategoriaSeleccionada(object sender, EventArgs e)
+        {
+            categoriaSeleccionado = comboBox3.GetItemText(comboBox3.SelectedItem);
+        }
+
+        private void AdministradorSeleccionado(object sender, EventArgs e)
+        {
+            administradorSeleccionado = comboBox4.GetItemText(comboBox4.SelectedItem);
+        }
+
+        private void DateSeleccionado(object sender, DateRangeEventArgs e)
+        {
+            DateTime date = monthCalendar1.SelectionStart;
+            fechaSeleccionada = date.ToString("yyyy-MM-dd");
         }
     }
 }

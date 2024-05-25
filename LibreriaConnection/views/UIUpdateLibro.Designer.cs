@@ -89,6 +89,7 @@ namespace LibreriaConnection.views
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 32);
             this.comboBox4.TabIndex = 109;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.AdministradorSeleccionado);
             // 
             // comboBox3
             // 
@@ -98,6 +99,7 @@ namespace LibreriaConnection.views
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 32);
             this.comboBox3.TabIndex = 108;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.CategoriaSeleccionada);
             // 
             // comboBox1
             // 
@@ -107,6 +109,7 @@ namespace LibreriaConnection.views
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 32);
             this.comboBox1.TabIndex = 107;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.EditorialSeleccionado);
             // 
             // checkBox1
             // 
@@ -124,6 +127,7 @@ namespace LibreriaConnection.views
             this.monthCalendar1.Location = new System.Drawing.Point(731, 118);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 105;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.DateSeleccionado);
             // 
             // label10
             // 
@@ -154,6 +158,7 @@ namespace LibreriaConnection.views
             this.button2.TabIndex = 102;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.UpdateLibroBtn);
             // 
             // label9
             // 
