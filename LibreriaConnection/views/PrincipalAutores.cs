@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace LibreriaConnection.views
 {
-    public partial class PrincipalAdministrador : Form
+    public partial class PrincipalAutores : Form
     {
-        public PrincipalAdministrador()
+        public PrincipalAutores()
         {
             InitializeComponent();
         }
+
         public void AbrirForm(Form form)
         {
             while (panel1.Controls.Count > 0)
@@ -31,22 +32,12 @@ namespace LibreriaConnection.views
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirForm(new UIInsertLibro()); //libro insert
+            AbrirForm(new UIInsertAutores()); 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirForm(new UIUpdateLibro()); //libro insert          
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PrincipalAdministrador_Load(object sender, EventArgs e)
-        {
-
+            AbrirForm(new UIUpdateAutores());          
         }
     }
 }
