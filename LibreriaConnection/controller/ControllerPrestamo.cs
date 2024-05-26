@@ -27,6 +27,15 @@ namespace LibreriaConnection.controller
             listaLibrosEnPrestamo = connect.ConsultaLibrosPrestamo(sql);
             return listaLibrosEnPrestamo;
         }
+        internal List<Libros> ConsultaLibroPrestamoCuenta()
+        {
+            List<Libros> listaLibros = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = "SELECT c.idCuenta, p.idCuentaPrestamo, lp.idLibroPrestamo_Prestamo, l.idLibro, l.titulo FROM cuentas c RIGHT JOIN prestamos p ON c.idCuenta = p.idCuentaPrestamo RIGHT JOIN libro_prestamo lp ON c.idCuenta = lp.idLibroPrestamo_Prestamo INNER JOIN libros l ON lp.idLibroPrestamo_Prestamo = l.idLibro;";
+            listaLibros = connect.ConsultaLibrosPrestamo(sql);
+            return listaLibros;
+
+        }
 
     }
 }

@@ -412,7 +412,7 @@ namespace LibreriaConnection.models
                 {
                     while (reader.Read())
                     {                        
-                        string _titulo = reader.GetString(0);// Leo la posicion.
+                        string _titulo = reader.GetString(4);// Leo la posicion.
 
                         listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
                     }
@@ -420,7 +420,7 @@ namespace LibreriaConnection.models
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error " + e.Message);
+                Console.WriteLine("Error en Connect: " + e.Message);
             }
             finally
             {
