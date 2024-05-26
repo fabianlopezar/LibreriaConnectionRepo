@@ -20,6 +20,10 @@ namespace LibreriaConnection.controller
             return listaLibros;
         }
 
+        internal void ConsultarLibroPrestamo()
+        {
+            
+        }
         internal bool InsertLibroImage(Libros objLibro)
         {
             bool result = false;

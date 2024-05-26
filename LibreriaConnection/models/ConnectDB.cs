@@ -297,6 +297,7 @@ namespace LibreriaConnection.models
                 MySqlCommand cmd = new MySqlCommand(sql, DataSource());
                 ConnectOpened();
                 MySqlDataReader reader = cmd.ExecuteReader();
+                Console.WriteLine("Deberia funcionar");
                 if (reader.HasRows)
                 {
                     while (reader.Read())
@@ -324,7 +325,7 @@ namespace LibreriaConnection.models
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error " + e.Message);
+                Console.WriteLine("Error en connect select libro: " + e.Message);
             }
             finally
             {
@@ -396,6 +397,40 @@ namespace LibreriaConnection.models
             return listaCiudades;
         }
         #endregion  ---------  END SELECTS        --------
+
+        #region -------Consultas ------------
+        internal List<Libros> ConsultaLibrosPrestamo(string sql)
+        {
+            List<Libros> listaLibros = new List<Libros>();
+            try
+            {
+
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {                        
+                        string _titulo = reader.GetString(0);// Leo la posicion.
+
+                        listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaLibros;
+        }
+        #endregion
+
+        #region -----  Connects   -----------
         public bool ExecuteQuery(string sql)
         {
             bool result = false;
@@ -428,5 +463,6 @@ namespace LibreriaConnection.models
             DataSource();
             connManager.Close();
         }
+        #endregion
     }
 }
