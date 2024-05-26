@@ -188,3 +188,4 @@ D:\Users\fabian_esteban.lopez\Desktop\repo\LibreriaConnectionRepo\LibreriaConnec
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIUpdateLibro.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.ConsultaLibroPrestamo.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIConsultarLibrosLector.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIConsultarLibroCategoria.resources

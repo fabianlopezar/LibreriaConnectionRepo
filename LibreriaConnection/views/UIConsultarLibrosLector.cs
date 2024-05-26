@@ -36,7 +36,7 @@ namespace LibreriaConnection.views
            
         }
 
-        private void SelectCuenta(object sender, EventArgs e)
+        private void CuentaSeleccionada(object sender, EventArgs e)
         {
             nombreCuenta = comboBox1.GetItemText(comboBox1.SelectedItem);
             int idCuenta = 0;

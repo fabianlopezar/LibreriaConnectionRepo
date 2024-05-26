@@ -36,8 +36,7 @@ namespace LibreriaConnection.views
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            AbrirForm(new UIInsertLibro()); //libro insert
+            AbrirForm(new UIUpdateLibro()); //libro insert          
         }
     }
 }

@@ -36,14 +36,15 @@ namespace LibreriaConnection
             //Application.Run(new UIUpdateAutores()) ;
             //Application.Run(new UIUpdateCuentas() /*Form1()*/);
             //Application.Run(new UIUpdateEditoriales() /*Form1()*/);
-            //Application.Run(new UIUpdateLibro() );
+//            Application.Run(new UIUpdateLibro() );
             
             //-------------------- Principales -------------------------------           
             //Application.Run(new PrincipalAdministrador() );
             
             //-------------------- Consultas -------------------------------           
-            Application.Run(new ConsultaLibroPrestamo() );
+            //Application.Run(new ConsultaLibroPrestamo() );
             //Application.Run(new UIConsultarLibrosLector() );
+            //Application.Run(new UIConsultarLibroCategoria() );
 
         }
     }

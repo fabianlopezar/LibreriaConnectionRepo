@@ -42,5 +42,14 @@ namespace LibreriaConnection.controller
             result = connect.ExecuteQueryImage(sql, objLibro.Imagen); 
             return result;
         }
+
+        internal List<Libros> ConsultarLibroCategoria()//------------ hasta aui llege
+        {
+            List<Libros> listaLibros = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = "select l.idLibro, l.titulo, l.idCategoriaLibro, c.idCategoria FROM libros l INNER JOIN categorias c ON l.idCategoriaLibro=c.idCategoria;";
+            return listaLibros;
+            
+        }
     }
 }

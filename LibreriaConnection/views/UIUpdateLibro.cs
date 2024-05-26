@@ -150,6 +150,8 @@ namespace LibreriaConnection.views
             }
             #endregion
 
+
+
         }
 
         private void EditorialSeleccionado(object sender, EventArgs e)
