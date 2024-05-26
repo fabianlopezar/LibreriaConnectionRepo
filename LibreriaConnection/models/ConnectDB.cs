@@ -399,7 +399,7 @@ namespace LibreriaConnection.models
         #endregion  ---------  END SELECTS        --------
 
         #region -------Consultas ------------
-        internal List<Libros> ConsultaLibrosPrestamo(string sql)
+        internal List<Libros> ConsultaLibrosPrestamoLector(string sql)
         {
             List<Libros> listaLibros = new List<Libros>();
             try
@@ -412,6 +412,35 @@ namespace LibreriaConnection.models
                 {
                     while (reader.Read())
                     {                        
+                        string _titulo = reader.GetString(0);// Leo la posicion.
+
+                        listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect: " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaLibros;
+        }
+        internal List<Libros> ConsultaLibrosPrestamo2(string sql)
+        {
+            List<Libros> listaLibros = new List<Libros>();
+            try
+            {
+
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
                         string _titulo = reader.GetString(4);// Leo la posicion.
 
                         listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.

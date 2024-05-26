@@ -42,8 +42,8 @@ namespace LibreriaConnection
             //Application.Run(new PrincipalAdministrador() );
             
             //-------------------- Consultas -------------------------------           
-            //Application.Run(new ConsultaLibroPrestamo() );
-            Application.Run(new UIConsultarLibrosLector() );
+            Application.Run(new ConsultaLibroPrestamo() );
+            //Application.Run(new UIConsultarLibrosLector() );
 
         }
     }

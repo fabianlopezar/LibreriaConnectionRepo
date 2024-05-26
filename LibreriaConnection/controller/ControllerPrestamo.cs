@@ -24,7 +24,7 @@ namespace LibreriaConnection.controller
         {
             ConnectDB connect = new ConnectDB();
             string sql = "select titulo from libros l right join libro_prestamo lp on l.idLibro=lp.idLibroPrestamo_Libro;";
-            listaLibrosEnPrestamo = connect.ConsultaLibrosPrestamo(sql);
+            listaLibrosEnPrestamo = connect.ConsultaLibrosPrestamoLector(sql);
             return listaLibrosEnPrestamo;
         }
         internal List<Libros> ConsultaLibroPrestamoCuenta(int id)
@@ -32,7 +32,7 @@ namespace LibreriaConnection.controller
             List<Libros> listaLibros = null;
             ConnectDB connect = new ConnectDB();
             string sql = "SELECT c.idCuenta, p.idCuentaPrestamo, lp.idLibroPrestamo_Prestamo, l.idLibro, l.titulo FROM cuentas c INNER JOIN prestamos p ON " + id + " = p.idCuentaPrestamo INNER JOIN libro_prestamo lp ON c.idCuenta = lp.idLibroPrestamo_Prestamo INNER JOIN libros l ON lp.idLibroPrestamo_Prestamo = l.idLibro;";
-            listaLibros = connect.ConsultaLibrosPrestamo(sql);
+            listaLibros = connect.ConsultaLibrosPrestamoLector(sql);
             return listaLibros;
 
         }
