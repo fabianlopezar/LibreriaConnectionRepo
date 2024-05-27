@@ -14,7 +14,7 @@ namespace LibreriaConnection.views
 {
     public partial class UIConsultarLibroCategoria : Form
     {
-        List<Libros> listaLibros;
+        List<Libros> listaLibros=null;
         List<Categorias> listaCategorias;
         string categoria;
         public UIConsultarLibroCategoria()
@@ -47,13 +47,25 @@ namespace LibreriaConnection.views
             ControllerLibro controllerLibro = new ControllerLibro();
             try
             {
-                listaLibros = controllerLibro.ConsultarLibroCategoria();
+                listaLibros = controllerLibro.ConsultarLibroCategoria(idCategoria);
+                //Console.WriteLine(listaLibros[0].Titulo);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error UIConsultarLibrosCategoria: {ex.Message}");
             }
+            
+            DataTable tabla = new DataTable();
+            tabla.Columns.Add("title", typeof(string));
 
+            foreach (var elem in listaLibros)
+            {
+                DataRow fila = tabla.NewRow();
+                fila["title"] = elem.Titulo;
+                tabla.Rows.Add(fila);
+            }
+            dataGridView1.DataSource = tabla;
+            
         }
     }
 }

@@ -333,6 +333,50 @@ namespace LibreriaConnection.models
             }
             return listaLibros;
         }
+        internal List<Libros> ConsultaLibros(string sql)
+        {
+            List<Libros> listaLibros = new List<Libros>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                Console.WriteLine("Deberia funcionar");
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int _idLibro = reader.GetInt32(0);
+                        string _titulo = reader.GetString(1);
+                        /*string _imagen = reader.GetString(2);
+                        string _codigoISBN = reader.GetString(3);
+                        string _disponible = reader.GetString(4);
+                        int _cantidadEjemplares = reader.GetInt32(5);
+                        string _fechaCreacion = reader.GetString(6);
+                        int _idEditorialLibro= reader.GetInt32(7);
+                        int _idCategoria= reader.GetInt32(8);
+                        int _idAdministrador= reader.GetInt32(9);
+                        bool disponible = false;
+                        if (_disponible.Equals(1))
+                        {
+                            disponible = true;
+                        }*/
+
+                        //listaLibros.Add(new Libros(_idLibro, _titulo,_imagen,_codigoISBN,disponible,_cantidadEjemplares,_fechaCreacion,_idEditorialLibro, _idCategoria, _idAdministrador));
+                        listaLibros.Add(new Libros(_idLibro, _titulo));
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en connect select libro: " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaLibros;
+        }
         internal List<Autores> SelectAutores(string sql)
         {
             List<Autores> listaAutores = new List<Autores>();
@@ -404,15 +448,18 @@ namespace LibreriaConnection.models
             List<Libros> listaLibros = new List<Libros>();
             try
             {
-
                 MySqlCommand cmd = new MySqlCommand(sql, DataSource());
                 ConnectOpened();
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
                     while (reader.Read())
-                    {                        
-                        string _titulo = reader.GetString(0);// Leo la posicion.
+                    {
+                        int id = reader.GetInt32(0);// Leo la posicion.
+                        Console.WriteLine("deberia funcionar 1");
+                        Console.WriteLine("soy 0: " + id);
+                        string _titulo = reader.GetString(4);// Leo la posicion.
+                        Console.WriteLine("soy 0: " + _titulo);
 
                         listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
                     }
@@ -450,6 +497,35 @@ namespace LibreriaConnection.models
             catch (Exception e)
             {
                 Console.WriteLine("Error en Connect: " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaLibros;
+        }
+
+        internal List<Libros> ConsultaLibroCategoria(string sql)
+        {
+            List<Libros> listaLibros = new List<Libros>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        string _titulo = reader.GetString(1);// Leo la posicion.
+
+                        listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect ConsultaLibroCategoria: " + e.Message);
             }
             finally
             {

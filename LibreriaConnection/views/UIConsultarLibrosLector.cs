@@ -53,6 +53,7 @@ namespace LibreriaConnection.views
             try
             {
                 listaLibros = controllerPrestamo.ConsultaLibroPrestamoCuenta(idCuenta);
+           
             }
             catch (Exception ex)
             {
