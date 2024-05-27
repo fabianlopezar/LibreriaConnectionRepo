@@ -139,6 +139,12 @@
     <Compile Include="views\PrincipalAdministrador.Designer.cs">
       <DependentUpon>PrincipalAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\PrincipalAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\PrincipalAutores.Designer.cs">
+      <DependentUpon>PrincipalAutores.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIConsultarLibroCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\PrincipalAdministrador.resx">
       <DependentUpon>PrincipalAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\PrincipalAutores.resx">
+      <DependentUpon>PrincipalAutores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIConsultarLibroCategoria.resx">
       <DependentUpon>UIConsultarLibroCategoria.cs</DependentUpon>
