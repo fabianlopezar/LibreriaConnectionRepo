@@ -48,5 +48,10 @@ namespace LibreriaConnection.views
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new UIUpdateCategorias());
+        }
     }
 }

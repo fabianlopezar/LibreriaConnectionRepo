@@ -39,8 +39,8 @@ namespace LibreriaConnection
             //            Application.Run(new UIUpdateLibro() );
 
             //-------------------- Principales -------------------------------           
-            //Application.Run(new PrincipalAdministrador() );
-            Application.Run(new PrincipalAutores());
+            Application.Run(new PrincipalAdministrador() );
+            //Application.Run(new PrincipalAutores());
 
             //-------------------- Consultas -------------------------------           
             //Application.Run(new ConsultaLibroPrestamo() );
