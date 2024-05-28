@@ -44,8 +44,10 @@ namespace LibreriaConnection
 
             //-------------------- Consultas -------------------------------           
             //Application.Run(new UIConsultarLibrosLector() ); //A. & F.) Se requiere consultar en algún momento, los libros que tiene actualmente en préstamo un lector
-            Application.Run(new ConsultaLibroPrestamo() );   //B. Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
+            //Application.Run(new ConsultaLibroPrestamo() );   //B. Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
             //Application.Run(new UIConsultarLibroCategoria() );//D. 
+            Application.Run(new UIConsultarCantidadLibrosPrestados() );//D. 
+
 
         }
     }

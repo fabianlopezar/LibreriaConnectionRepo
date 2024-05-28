@@ -455,12 +455,38 @@ namespace LibreriaConnection.models
                 {
                     while (reader.Read())
                     {
-                        int id = reader.GetInt32(0);// Leo la posicion.
-                        Console.WriteLine("deberia funcionar 1");
+                        int id = reader.GetInt32(0);// Leo la posicion.                        
                         //Console.WriteLine("soy 0: " + id);
                         string _titulo = reader.GetString(4);// Leo la posicion.
                         //Console.WriteLine("soy 0: " + _titulo);
 
+                        listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect (ConsultaLibrosPrestamoLector): " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaLibros;
+        }
+        internal List<Libros> ConsultarCantidadLibrosActuales(string sql)
+        {
+            List<Libros> listaLibros = new List<Libros>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {                                                                        
+                        string _titulo = reader.GetString(1);// Leo la posicion.                        
                         listaLibros.Add(new Libros(_titulo));// agrego a la lista de libros prestados.
                     }
                 }

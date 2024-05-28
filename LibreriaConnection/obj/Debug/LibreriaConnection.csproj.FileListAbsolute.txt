@@ -249,4 +249,4 @@ C:\Users\Nicolas Donneis\OneDrive\Desktop\Repo\LibreriaConnectionRepo\LibreriaCo
 C:\Users\Nicolas Donneis\OneDrive\Desktop\Repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.pdb
 C:\Users\Nicolas Donneis\OneDrive\Desktop\Repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAutores.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAutores.resources
-C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIConsultaCantidadLibros.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIConsultarCantidadLibrosPrestados.resources

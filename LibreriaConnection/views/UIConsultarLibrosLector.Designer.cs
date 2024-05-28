@@ -41,12 +41,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(157, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(521, 55);
+            this.label1.Size = new System.Drawing.Size(546, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Consultar Libros Lector";
+            this.label1.Text = "Consultar Libros Prestados por un Lector";
             // 
             // dataGridView1
             // 

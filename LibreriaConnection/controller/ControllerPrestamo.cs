@@ -32,13 +32,28 @@ namespace LibreriaConnection.controller
        
             List<Libros> listaLibros = null;
             ConnectDB connect = new ConnectDB();
-            string sql = "SELECT c.idCuenta, p.idCuentaPrestamo, lp.idLibroPrestamo_Prestamo, l.idLibro, l.titulo FROM cuentas c INNER JOIN prestamos p ON  "+id+" = p.idCuentaPrestamo INNER JOIN libro_prestamo lp ON c.idCuenta = lp.idLibroPrestamo_Prestamo INNER JOIN libros l ON lp.idLibroPrestamo_Prestamo = l.idLibro;";
-            
-            listaLibros = connect.ConsultaLibrosPrestamoLector(sql);
-            Console.WriteLine("deberia funcionar 2");
+            string sql = "SELECT c.idCuenta, p.idCuentaPrestamo, lp.idLibroPrestamo_Prestamo, l.idLibro, l.titulo FROM cuentas c INNER JOIN prestamos p ON  "+id+" = p.idCuentaPrestamo INNER JOIN libro_prestamo lp ON c.idCuenta = lp.idLibroPrestamo_Prestamo INNER JOIN libros l ON lp.idLibroPrestamo_Prestamo = l.idLibro;";            
+            listaLibros = connect.ConsultaLibrosPrestamoLector(sql);            
             return listaLibros;
 
         }
+        internal List<Libros> ConsultarCantidadLibrosPrestamosActuales()
+        {
+            List<Libros> listaLibros = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = "SELECT * FROM libros l INNER JOIN libro_prestamo lp ON l.idLibro= lp.idLibroPrestamo_Libro INNER JOIN prestamos p ON lp.idLibroPrestamo_Prestamo= p.idPrestamo WHERE p.estaVencido = 1;";
+            listaLibros = connect.ConsultarCantidadLibrosActuales(sql);
+            return listaLibros;
+        }
+        internal List<Libros> ConsultarCantidadLibrosPrestamosVencidos()
+        {
+            List<Libros> listaLibros = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = "SELECT * FROM libros l INNER JOIN libro_prestamo lp ON l.idLibro= lp.idLibroPrestamo_Libro INNER JOIN prestamos p ON lp.idLibroPrestamo_Prestamo= p.idPrestamo WHERE p.estaVencido = 0;";
+            listaLibros = connect.ConsultarCantidadLibrosActuales(sql);
+            return listaLibros;
+        }
+
 
     }
 }
