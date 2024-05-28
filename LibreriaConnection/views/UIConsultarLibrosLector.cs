@@ -22,7 +22,7 @@ namespace LibreriaConnection.views
         }
 
         private void UIConsultarLibrosLector_Load(object sender, EventArgs e)
-        {            
+        {
             #region ListaCuentas          
             ControllerCuentas controllerCuenta = new ControllerCuentas();
             listaCuentas = controllerCuenta.SelectCuentas();
@@ -32,14 +32,15 @@ namespace LibreriaConnection.views
                 comboBox1.Items.Add(listaCuentas[j].Nombre1Cuenta);
             }
             #endregion
-           
-           
+
+
         }
 
         private void CuentaSeleccionada(object sender, EventArgs e)
         {
             nombreCuenta = comboBox1.GetItemText(comboBox1.SelectedItem);
             int idCuenta = 0;
+            int numeroLibrosPrestados = 0;
             for (int i = 0; i < listaCuentas.Count; i++)
             {
                 if (nombreCuenta.Equals(listaCuentas[i].Nombre1Cuenta))
@@ -53,7 +54,7 @@ namespace LibreriaConnection.views
             try
             {
                 listaLibros = controllerPrestamo.ConsultaLibroPrestamoCuenta(idCuenta);
-           
+
             }
             catch (Exception ex)
             {
@@ -64,11 +65,13 @@ namespace LibreriaConnection.views
 
             foreach (var elem in listaLibros)
             {
+                numeroLibrosPrestados++;
                 DataRow fila = tabla.NewRow();
                 fila["title"] = elem.Titulo;
                 tabla.Rows.Add(fila);
             }
             dataGridView1.DataSource = tabla;
+            textBox1.Text = "" + numeroLibrosPrestados;
             #endregion
         }
     }

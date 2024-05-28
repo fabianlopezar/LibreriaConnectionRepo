@@ -19,7 +19,7 @@ namespace LibreriaConnection
             Application.SetCompatibleTextRenderingDefault(false);
             //-------------------- inserts -------------------------------
             //Application.Run(new UIInsertLibro() ); //Funciona
-            //Application.Run(new UIInsertAutores()) ; //Funciona
+            Application.Run(new UIInsertAutores()) ; //Funciona
             //Application.Run(new UIInsertCuenta() ) ;
 
 
@@ -40,12 +40,12 @@ namespace LibreriaConnection
 
             //-------------------- Principales -------------------------------           
             //Application.Run(new PrincipalAdministrador() );
-            //Application.Run(new PrincipalAutores());
+            Application.Run(new PrincipalAutores());
 
             //-------------------- Consultas -------------------------------           
             //Application.Run(new ConsultaLibroPrestamo() ); //Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
             //Application.Run(new UIConsultarLibrosLector() ); //Se requiere consultar en algún momento, los libros que tiene actualmente en préstamo un lector
-            Application.Run(new UIConsultarLibroCategoria() );
+            //Application.Run(new UIConsultarLibroCategoria() );
 
         }
     }
