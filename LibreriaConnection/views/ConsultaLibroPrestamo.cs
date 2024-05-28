@@ -11,7 +11,7 @@ using LibreriaConnection.models;
 using LibreriaConnection.controller;
 namespace LibreriaConnection.views
 {
-
+    // -------------------- UI ------------------------
     public partial class ConsultaLibroPrestamo : Form
     {
         List<Libros> listaLibros;
@@ -29,7 +29,7 @@ namespace LibreriaConnection.views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al consultar los Libros: {ex.Message}");
+                MessageBox.Show($"Error ConsultarLibroPrestamo : {ex.Message}");
             }
             DataTable tabla = new DataTable();
             tabla.Columns.Add("title", typeof(string));

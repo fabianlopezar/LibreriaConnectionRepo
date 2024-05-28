@@ -24,7 +24,7 @@ namespace LibreriaConnection.controller
         {
             ConnectDB connect = new ConnectDB();
             string sql = "select titulo from libros l right join libro_prestamo lp on l.idLibro=lp.idLibroPrestamo_Libro;";
-            listaLibrosEnPrestamo = connect.ConsultaLibrosPrestamoLector(sql);
+            listaLibrosEnPrestamo = connect.ConsultarTodosLosLibrosPrestados(sql);
             return listaLibrosEnPrestamo;
         }
         internal List<Libros> ConsultaLibroPrestamoCuenta(int id)
