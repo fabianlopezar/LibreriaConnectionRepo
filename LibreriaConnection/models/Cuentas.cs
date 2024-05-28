@@ -10,16 +10,16 @@ namespace LibreriaConnection.models
 {
     class Cuentas
     {
-     private int idCuenta ;
-     private string nombre1Cuenta;
-     private string nombre2Cuenta;
-     private string apellido1Cuenta;
-     private string apellido2Cuenta;
-     private string direccionCuenta;
-     private string foto;
-     private string fechaNacimiento;
-     private string contraseniaCuenta;
-     ConnectDB objC= new ConnectDB();
+        private int idCuenta;
+        private string nombre1Cuenta;
+        private string nombre2Cuenta;
+        private string apellido1Cuenta;
+        private string apellido2Cuenta;
+        private string direccionCuenta;
+        private string foto;
+        private string fechaNacimiento;
+        private string contraseniaCuenta;
+        ConnectDB objC = new ConnectDB();
 
 
         internal List<Cuentas> SelectCuenta(string sql)
@@ -29,21 +29,21 @@ namespace LibreriaConnection.models
             {
                 MySqlCommand cmd = new MySqlCommand(sql, objC.DataSource());
                 objC.ConnectOpened();
-                MySqlDataReader reader=cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
                     while (reader.Read())
                     {
-                        int idCuenta=reader.GetInt32(0);
-                        string nameC= reader.GetString(1);
-                        Cuentas objCuenta= new Cuentas(idCuenta,nameC);
+                        int idCuenta = reader.GetInt32(0);
+                        string nameC = reader.GetString(1);
+                        Cuentas objCuenta = new Cuentas(idCuenta, nameC);
                         listaCuentas.Add(objCuenta);
                     }
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                Console.WriteLine("Error en Cuenta: "+e.Message);
+                Console.WriteLine("Error en Cuenta: " + e.Message);
                 objC.ConnectClosed();
             }
             finally
@@ -84,6 +84,17 @@ namespace LibreriaConnection.models
             this.Foto = foto;
             this.FechaNacimiento = fechaNacimiento;
             this.ContraseniaCuenta = contraseniaCuenta;
+        }
+
+        public Cuentas(string nombre1Cuenta, string nombre2Cuenta, string apellido1Cuenta, string apellido2Cuenta, string direccionCuenta, string foto, string contraseniaCuenta)
+        {
+            this.nombre1Cuenta = nombre1Cuenta;
+            this.nombre2Cuenta = nombre2Cuenta;
+            this.apellido1Cuenta = apellido1Cuenta;
+            this.apellido2Cuenta = apellido2Cuenta;
+            this.direccionCuenta = direccionCuenta;
+            this.foto = foto;
+            this.contraseniaCuenta = contraseniaCuenta;
         }
 
         public int IdCuenta { get => idCuenta; set => idCuenta = value; }

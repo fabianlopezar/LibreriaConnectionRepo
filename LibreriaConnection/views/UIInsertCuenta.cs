@@ -13,6 +13,7 @@ namespace LibreriaConnection.views
 {
     public partial class UIInsertCuenta : Form
     {
+        string rutaImage;
         public UIInsertCuenta()
         {
             InitializeComponent();
@@ -40,7 +41,21 @@ namespace LibreriaConnection.views
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                openFileDialog1.Filter = "Image files | *.jpg";
+                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    rutaImage = openFileDialog1.FileName;
+                    //Console.WriteLine("Name file " + openFileDialog1.FileName);
+                    pictureBox1.Image = Image.FromFile(openFileDialog1.FileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.ToString());
+            }
         }
 
         private void UIInsertCuenta_Load(object sender, EventArgs e)
@@ -50,15 +65,26 @@ namespace LibreriaConnection.views
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string nombre1 = textBox1.Text;
-            string nombre2 = textBox2.Text;
-            string apellido1 = textBox4.Text;
-            string apellido2 = textBox3.Text;
-            string direccion = textBox5.Text;
-            string contraseña = textBox6.Text;
+            string nombre1Cuenta = textBox1.Text;
+            string nombre2Cuenta = textBox2.Text;
+            string apellido1Cuenta = textBox4.Text;
+            string apellido2Cuenta = textBox3.Text;
+            string direccionCuenta = textBox5.Text;
+            string contraseniaCuenta = textBox6.Text;
+            string foto = rutaImage;
 
-            Cuentas cuenta = new Cuentas();
-            ControllerCuentas controllerCuenta = new ControllerCuentas();
+            Cuentas objC = new Cuentas(nombre1Cuenta, nombre2Cuenta, apellido1Cuenta, apellido2Cuenta, direccionCuenta, foto, contraseniaCuenta);
+            ControllerCuentas objCC = new ControllerCuentas();
+            bool result = objCC.InserCuentaImage(objC);
+
+            if (result)
+            {
+                MessageBox.Show("Costumer Insert Correct");
+            }
+            else
+            {
+                MessageBox.Show("Costumer Insert Incorrect");
+            }
         }
     }
 }

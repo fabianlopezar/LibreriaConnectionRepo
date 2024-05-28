@@ -9,7 +9,21 @@ namespace LibreriaConnection.controller
 {
     class ControllerCuentas
     {
-        
+        internal bool InserCuentaImage(Cuentas objC)
+        {
+            bool result = false;
+            string sql = " insert into cuentas(nombre1Cuenta, nombre2Cuenta, apellido1Cuenta, apellido2Cuenta," +
+                "direccionCuenta, contraseniaCuenta, correoCuenta, foto ) " +
+                "values('" + objC.Nombre1Cuenta + "', '" + objC.Nombre2Cuenta + "', '" + objC.Apellido1Cuenta + "'," +
+                "'" + objC.Apellido2Cuenta + "', '" + objC.DireccionCuenta + "'," +
+                "'" + objC.ContraseniaCuenta + "' '" + objC.CorreoCuenta +"', @fotoCuenta) ";
+
+            ConnectDB objDB = new ConnectDB();
+            result = objDB.ExecuteQueryImage(sql, objC.Foto);
+
+            return result;
+        }
+
         internal List<Cuentas> SelectCuentas()
         {
             List<Cuentas> listaCuentas = null;

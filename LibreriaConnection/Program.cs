@@ -17,12 +17,15 @@ namespace LibreriaConnection
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Application.Run(new UILogin());
+            //Application.Run(new PrincipalCuenta());
             //-------------------- inserts -------------------------------
             //Application.Run(new UIInsertLibro() ); //Funciona
             //Application.Run(new UIInsertAutores()) ; //Funciona
-            Application.Run(new UIInsertCuenta() ) ;
-            
-            
+            //Application.Run(new UIInsertCuenta() ) ;
+
+
             //Application.Run(new UIInsertTelefono() ) ;
             //Application.Run(new UIInsertEditorial() ) ;
             //Application.Run(new UIInsertAdministradores()) ;
@@ -38,7 +41,7 @@ namespace LibreriaConnection
             //Application.Run(new UIUpdateEditoriales() /*Form1()*/);
             //Application.Run(new PrincipalAdministrador() );
             //Application.Run(new UIUpdateLibro() );
-            
+
         }
     }
 }

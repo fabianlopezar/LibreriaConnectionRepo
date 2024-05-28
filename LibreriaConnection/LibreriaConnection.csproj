@@ -132,6 +132,12 @@
     <Compile Include="views\PrincipalAdministrador.Designer.cs">
       <DependentUpon>PrincipalAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\PrincipalCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\PrincipalCuenta.Designer.cs">
+      <DependentUpon>PrincipalCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIInsertAdministradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,12 @@
     </Compile>
     <Compile Include="views\UIInsertTelefono.Designer.cs">
       <DependentUpon>UIInsertTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\UILogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UILogin.Designer.cs">
+      <DependentUpon>UILogin.cs</DependentUpon>
     </Compile>
     <Compile Include="views\UIUpdateAdministrador.cs">
       <SubType>Form</SubType>
@@ -222,6 +234,9 @@
     <EmbeddedResource Include="views\PrincipalAdministrador.resx">
       <DependentUpon>PrincipalAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\PrincipalCuenta.resx">
+      <DependentUpon>PrincipalCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertAdministradores.resx">
       <DependentUpon>UIInsertAdministradores.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertTelefono.resx">
       <DependentUpon>UIInsertTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UILogin.resx">
+      <DependentUpon>UILogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIUpdateAdministrador.resx">
       <DependentUpon>UIUpdateAdministrador.cs</DependentUpon>
