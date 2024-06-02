@@ -36,7 +36,7 @@ namespace LibreriaConnection
             //Application.Run(new UIUpdateAutores()) ;
             //Application.Run(new UIUpdateCuentas() /*Form1()*/);
             //Application.Run(new UIUpdateEditoriales() /*Form1()*/);
-            //            Application.Run(new UIUpdateLibro() );
+            Application.Run(new UIUpdateLibro() );
 
             //-------------------- Principales -------------------------------           
             //Application.Run(new PrincipalAdministrador() );
@@ -46,7 +46,7 @@ namespace LibreriaConnection
             //Application.Run(new UIConsultarLibrosLector() ); //A. & F.) Se requiere consultar en algún momento, los libros que tiene actualmente en préstamo un lector
             //Application.Run(new ConsultaLibroPrestamo() );   //B. Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
             //Application.Run(new UIConsultarLibroCategoria() );//D. 
-            Application.Run(new UIConsultarCantidadLibrosPrestados() );//D. 
+            //Application.Run(new UIConsultarCantidadLibrosPrestados() );//D. 
 
 
         }

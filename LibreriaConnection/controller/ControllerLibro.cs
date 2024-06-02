@@ -54,5 +54,25 @@ namespace LibreriaConnection.controller
             return listaLibros;
 
         }
+        internal bool UpdateLibro(Libros libro)
+        {
+            bool result = false;
+            int disponibleInt = 0; if (libro.Disponible)
+            {
+                disponibleInt = 1;
+            }
+            else
+            {
+                disponibleInt = 0;
+            }
+            Console.WriteLine("Soy la imagen" + libro.Imagen);
+            
+            string sql = "UPDATE libros SET titulo='" + libro.Titulo + "', imagen= @fotoLibro  , codigoISBN='" + libro.CodigoISBN + "', disponible=" + disponibleInt + ", cantidadEjemplares=" + libro.CantidadEjemplares + ", fechaCreacion='" + libro.FechaCreacion + "', idEditorialLibro=" + libro.IdEditorialLibro + ", idCategoriaLibro=" + libro.IdCategoriaLibro + ", idAdministradorLibro=" + libro.IdAdministradorLibro + " WHERE idLibro=" + libro.IdLibro;
+            ConnectDB connect = new ConnectDB();
+            //result = connect.ExecuteQueryImage(sql, objLibro.Imagen);
+            //result= connect.ExecuteQuery(sql);
+            result= connect.ExecuteQueryImage(sql,libro.Imagen);
+            return result;
+        }
     }
 }

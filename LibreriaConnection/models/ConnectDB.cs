@@ -297,29 +297,23 @@ namespace LibreriaConnection.models
                 MySqlCommand cmd = new MySqlCommand(sql, DataSource());
                 ConnectOpened();
                 MySqlDataReader reader = cmd.ExecuteReader();
-                Console.WriteLine("Deberia funcionar");
                 if (reader.HasRows)
                 {
                     while (reader.Read())
                     {
-                        int _idLibro = reader.GetInt32(0);
-                        string _titulo = reader.GetString(1);
-                        /*string _imagen = reader.GetString(2);
-                        string _codigoISBN = reader.GetString(3);
-                        string _disponible = reader.GetString(4);
-                        int _cantidadEjemplares = reader.GetInt32(5);
-                        string _fechaCreacion = reader.GetString(6);
-                        int _idEditorialLibro= reader.GetInt32(7);
-                        int _idCategoria= reader.GetInt32(8);
-                        int _idAdministrador= reader.GetInt32(9);
-                        bool disponible = false;
-                        if (_disponible.Equals(1))
-                        {
-                            disponible = true;
-                        }*/
-
-                        //listaLibros.Add(new Libros(_idLibro, _titulo,_imagen,_codigoISBN,disponible,_cantidadEjemplares,_fechaCreacion,_idEditorialLibro, _idCategoria, _idAdministrador));
-                        listaLibros.Add(new Libros(_idLibro, _titulo));
+                        int idLibro = reader.GetInt32(0);
+                        string titulo = reader.GetString(1);
+                        string imagen = reader.IsDBNull(2) ? null : Convert.ToBase64String((byte[])reader[2]);
+                        //Console.WriteLine("soy imagen: "+imagen);
+                        string codigoISBN = reader.GetString(3);
+                        bool _disponible = reader.GetBoolean(4);
+                        int cantidadEjemplares = reader.GetInt32(5);                        
+                        string fechaCreacion = reader.IsDBNull(6) ? null : reader.GetDateTime(6).ToString("yyyy-MM-dd HH:mm:ss");                        
+                        int idEditorialLibro= reader.GetInt32(7);
+                        int idCategoria= reader.GetInt32(8);
+                        int idAdministrador= reader.GetInt32(9);
+                                                                       
+                        listaLibros.Add(new Libros(idLibro, titulo,imagen,codigoISBN,_disponible,cantidadEjemplares,fechaCreacion,idEditorialLibro,idCategoria,idAdministrador));
                     }
                 }
             }

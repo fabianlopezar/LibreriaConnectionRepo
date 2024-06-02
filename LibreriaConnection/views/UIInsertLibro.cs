@@ -59,10 +59,7 @@ namespace LibreriaConnection.views
             string title = textBox1.Text;
             string imagen = rutaImagen;
             string codigoISBN = textBox2.Text;
-
             bool disponible = checkBox1.Checked;
-            
-            
             int cantidadEjemplares = Int32.Parse(textBox3.Text);
             string fechaCreacion = dateString;
             int idEditorial = 0;
@@ -146,6 +143,11 @@ namespace LibreriaConnection.views
         private void AdministradorSeleccionado(object sender, EventArgs e)
         {
             nombreAdministrador = comboBox4.GetItemText(comboBox4.SelectedItem);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
         /*
 private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
