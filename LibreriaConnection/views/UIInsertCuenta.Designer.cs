@@ -47,6 +47,8 @@ namespace LibreriaConnection.views
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,13 +56,13 @@ namespace LibreriaConnection.views
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(519, 307);
+            this.button1.Location = new System.Drawing.Point(488, 309);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 30);
             this.button1.TabIndex = 18;
             this.button1.Text = "Cargar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.LoadImage);
             // 
             // label2
             // 
@@ -165,7 +167,7 @@ namespace LibreriaConnection.views
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(503, 153);
+            this.pictureBox1.Location = new System.Drawing.Point(472, 155);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(158, 148);
             this.pictureBox1.TabIndex = 27;
@@ -183,7 +185,7 @@ namespace LibreriaConnection.views
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(544, 119);
+            this.label8.Location = new System.Drawing.Point(513, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 29);
             this.label8.TabIndex = 29;
@@ -211,7 +213,7 @@ namespace LibreriaConnection.views
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(379, 411);
+            this.button2.Location = new System.Drawing.Point(939, 411);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 32);
             this.button2.TabIndex = 32;
@@ -219,11 +221,30 @@ namespace LibreriaConnection.views
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(677, 155);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 87;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.FechaSeleccionada);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(724, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 24);
+            this.label3.TabIndex = 86;
+            this.label3.Text = "Fecha Nacimiento";
+            // 
             // UIInsertCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 455);
+            this.ClientSize = new System.Drawing.Size(1069, 455);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox6);
@@ -270,5 +291,7 @@ namespace LibreriaConnection.views
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Label label3;
     }
 }

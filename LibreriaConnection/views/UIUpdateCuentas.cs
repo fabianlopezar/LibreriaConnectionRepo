@@ -47,7 +47,7 @@ namespace LibreriaConnection.views
                 }
             }
             Cuentas objCuentas = new Cuentas(idCuenta, cuentaUpdate);
-            bool result = objCC.UpdateCuentas(objCuentas);
+            bool result = objCC.InsertCuentaImage(objCuentas);
             if (result)
             {
                 MessageBox.Show("Modificacion Correcta");

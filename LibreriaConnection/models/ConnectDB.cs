@@ -88,6 +88,43 @@ namespace LibreriaConnection.models
             }
             return result;
         }
+        internal bool ExecuteQueryImageCuenta(string sql, string imagen)
+        {
+            bool result = false;
+            FileStream fs;
+            BinaryReader br;
+            try
+            {
+                byte[] ImageData;
+                fs = new FileStream(imagen, FileMode.Open, FileAccess.Read);
+                br = new BinaryReader(fs);
+                ImageData = br.ReadBytes((int)fs.Length);
+                br.Close();
+                fs.Close();
+
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                cmd = new MySqlCommand(sql, DataSource());
+                cmd.Parameters.Add("@fotoCuenta", MySqlDbType.LongBlob);
+                cmd.Parameters["@fotoCuenta"].Value = ImageData;
+                ConnectOpened();
+                int RowsAffected = cmd.ExecuteNonQuery();
+                if (RowsAffected > 0)
+                {
+                    result = true;
+                }
+            }
+            catch (Exception w)
+            {
+                Console.WriteLine("Error en ConnectDB: " + w.Message);
+                ConnectClosed();
+            }
+            finally
+            {
+                ConnectClosed();
+
+            }
+            return result;
+        }
 
         internal List<Cuentas> SelectCuentas(string sql)
         {

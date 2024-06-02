@@ -20,7 +20,7 @@ namespace LibreriaConnection
             //-------------------- inserts -------------------------------
             //Application.Run(new UIInsertLibro() ); //Funciona
             //Application.Run(new UIInsertAutores()) ; //Funciona
-            //Application.Run(new UIInsertCuenta() ) ;
+            Application.Run(new UIInsertCuenta() ) ;
 
 
             //Application.Run(new UIInsertTelefono() ) ;
@@ -36,7 +36,7 @@ namespace LibreriaConnection
             //Application.Run(new UIUpdateAutores()) ;
             //Application.Run(new UIUpdateCuentas() /*Form1()*/);
             //Application.Run(new UIUpdateEditoriales() /*Form1()*/);
-            Application.Run(new UIUpdateLibro() );
+            //Application.Run(new UIUpdateLibro() );
 
             //-------------------- Principales -------------------------------           
             //Application.Run(new PrincipalAdministrador() );

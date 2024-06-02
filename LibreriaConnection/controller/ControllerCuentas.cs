@@ -9,24 +9,26 @@ namespace LibreriaConnection.controller
 {
     class ControllerCuentas
     {
-        
+
         internal List<Cuentas> SelectCuentas()
         {
             List<Cuentas> listaCuentas = null;
-           
+
             string sql = "select * from cuentas;";
             Cuentas objCuenta = new Cuentas();
-            listaCuentas = objCuenta.SelectCuenta(sql);// video min
+            listaCuentas = objCuenta.SelectCuenta(sql);
 
             return listaCuentas;
         }
 
-        internal bool UpdateCuentas(Cuentas objCuenta)
-        {
+        internal bool InsertCuentaImage(Cuentas cuenta)
+        {            
             bool result = false;
-            string sql = "update cuentas set nombre1Cuenta='" + objCuenta.Nombre1Cuenta + "' WHERE idCuenta=" + objCuenta.IdCuenta;
+
+            string sql = $"INSERT INTO cuentas (idCuenta, nombre1Cuenta, nombre2Cuenta, apellido1Cuenta, apellido2Cuenta, direccionCuenta, foto, fechaNacimiento, contraseniaCuenta) VALUES ({cuenta.IdCuenta}, '{cuenta.Nombre1Cuenta}', '{cuenta.Nombre2Cuenta}', '{cuenta.Apellido1Cuenta}', '{cuenta.Apellido2Cuenta}', '{cuenta.DireccionCuenta}', @fotoCuenta, '{cuenta.FechaNacimiento}', '{cuenta.ContraseniaCuenta}')";
             ConnectDB objCBD = new ConnectDB();
-            result = objCBD.ExecuteQuery(sql);
+            result = objCBD.ExecuteQueryImageCuenta(sql,cuenta.Foto);
+         
             return result;
         }
     }
