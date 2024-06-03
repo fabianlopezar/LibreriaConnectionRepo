@@ -20,7 +20,7 @@ namespace LibreriaConnection
             //-------------------- inserts -------------------------------
             //Application.Run(new UIInsertLibro() ); //Funciona
             //Application.Run(new UIInsertAutores()) ; //Funciona
-            Application.Run(new UIInsertCuenta() ) ;
+            //Application.Run(new UIInsertCuenta() ) ;
 
 
             //Application.Run(new UIInsertTelefono() ) ;
@@ -47,6 +47,7 @@ namespace LibreriaConnection
             //Application.Run(new ConsultaLibroPrestamo() );   //B. Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
             //Application.Run(new UIConsultarLibroCategoria() );//D. 
             //Application.Run(new UIConsultarCantidadLibrosPrestados() );//D. 
+            Application.Run(new ConsultaPrestamoPorFecha() ); 
 
 
         }

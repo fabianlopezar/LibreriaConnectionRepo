@@ -213,7 +213,7 @@ namespace LibreriaConnection.views
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(939, 411);
+            this.button2.Location = new System.Drawing.Point(807, 411);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 32);
             this.button2.TabIndex = 32;

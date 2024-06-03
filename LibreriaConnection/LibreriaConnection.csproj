@@ -133,6 +133,12 @@
     <Compile Include="views\ConsultaLibroPrestamo.Designer.cs">
       <DependentUpon>ConsultaLibroPrestamo.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultaPrestamoPorFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ConsultaPrestamoPorFecha.Designer.cs">
+      <DependentUpon>ConsultaPrestamoPorFecha.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     </Compile>
     <EmbeddedResource Include="views\ConsultaLibroPrestamo.resx">
       <DependentUpon>ConsultaLibroPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ConsultaPrestamoPorFecha.resx">
+      <DependentUpon>ConsultaPrestamoPorFecha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -88,11 +88,11 @@ namespace LibreriaConnection.views
             bool result = controllerCuenta.InsertCuentaImage(cuenta);
             if (result)
             {
-                MessageBox.Show("Libro Insert Correct");
+                MessageBox.Show("Cuenta Insert Correct");
             }
             else
             {
-                MessageBox.Show("Libro Insert Incorrect");
+                MessageBox.Show("Cuenta Insert Incorrect");
             }
         }
 

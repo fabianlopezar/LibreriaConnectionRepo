@@ -54,6 +54,19 @@ namespace LibreriaConnection.controller
             return listaLibros;
         }
 
+        internal List<Libros> ConsultarLibrosPrestadoEntreFechas(string fecha1, string fecha2)
+        {
+            Console.WriteLine("Soy fecha 1: "+ fecha1);
+            Console.WriteLine("Soy fecha 2: "+ fecha2);
+            List<Libros> listaLibros = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = $"SELECT * FROM prestamos p INNER JOIN libro_prestamo lp ON p.idPrestamo = lp.idLibroPrestamo_Prestamo INNER JOIN libros l ON lp.idLibroPrestamo_Libro = l.idLibro WHERE p.fechaPrestamo BETWEEN '{fecha1}' AND '{fecha2}';";
+            listaLibros = connect.ConsultarLibrosPrestadosEntreFechas(sql);
+
+            return listaLibros;
+
+        }
+
 
     }
 }
