@@ -47,10 +47,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(651, 156);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(434, 156);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(282, 25);
+            this.label4.Size = new System.Drawing.Size(208, 20);
             this.label4.TabIndex = 16;
             this.label4.Text = "Cantidad de Libros Actuales";
             // 
@@ -58,7 +58,7 @@
             // 
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(656, 185);
+            this.textBox1.Location = new System.Drawing.Point(439, 185);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(179, 31);
             this.textBox1.TabIndex = 15;
@@ -76,12 +76,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(111, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(819, 33);
+            this.label1.Size = new System.Drawing.Size(638, 31);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Consultar cual es la cantidad de libros en préstamos actuales.";
+            this.label1.Text = "Consultar cantidad de libros en préstamos actuales.";
             // 
             // dataGridView1
             // 
@@ -95,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(493, 42);
+            this.label5.Location = new System.Drawing.Point(642, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 33);
             this.label5.TabIndex = 17;
@@ -104,12 +104,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(111, 75);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(9, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(822, 33);
+            this.label6.Size = new System.Drawing.Size(640, 31);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Consultar cual es la cantidad de libros en préstamos Vencidos";
+            this.label6.Text = "Consultar cantidad de libros en préstamos Vencidos";
             // 
             // label2
             // 
@@ -132,10 +132,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(651, 234);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(434, 234);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(288, 25);
+            this.label7.Size = new System.Drawing.Size(212, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "Cantidad de Libros Vencidos";
             // 
@@ -143,7 +143,7 @@
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(656, 262);
+            this.textBox2.Location = new System.Drawing.Point(439, 262);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(179, 31);
             this.textBox2.TabIndex = 21;
@@ -151,7 +151,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(872, 393);
+            this.button1.Location = new System.Drawing.Point(439, 393);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 45);
             this.button1.TabIndex = 23;
@@ -163,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 450);
+            this.ClientSize = new System.Drawing.Size(687, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox2);

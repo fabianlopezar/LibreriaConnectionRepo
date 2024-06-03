@@ -139,6 +139,12 @@
     <Compile Include="views\ConsultaPrestamoPorFecha.Designer.cs">
       <DependentUpon>ConsultaPrestamoPorFecha.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultarValorMulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ConsultarValorMulta.Designer.cs">
+      <DependentUpon>ConsultarValorMulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\ConsultaPrestamoPorFecha.resx">
       <DependentUpon>ConsultaPrestamoPorFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ConsultarValorMulta.resx">
+      <DependentUpon>ConsultarValorMulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

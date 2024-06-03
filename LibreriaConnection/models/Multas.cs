@@ -30,6 +30,11 @@ namespace LibreriaConnection.models
             this.fechaInicio = fechaInicio;
         }
 
+        public Multas(double valorAPagar)
+        {
+            this.valorAPagar = valorAPagar;
+        }
+
         public Multas(int idMultas, string fechaInicio, bool estapagado, double valorAPagar, string fechaPago, string idPrestamoMulta)
         {
             this.idMultas = idMultas;

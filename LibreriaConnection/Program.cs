@@ -39,7 +39,7 @@ namespace LibreriaConnection
             //Application.Run(new UIUpdateLibro() );
 
             //-------------------- Principales -------------------------------           
-            //Application.Run(new PrincipalAdministrador() );
+            Application.Run(new PrincipalAdministrador() );
             //Application.Run(new PrincipalAutores());
 
             //-------------------- Consultas -------------------------------           
@@ -47,7 +47,8 @@ namespace LibreriaConnection
             //Application.Run(new ConsultaLibroPrestamo() );   //B. Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
             //Application.Run(new UIConsultarLibroCategoria() );//D. 
             //Application.Run(new UIConsultarCantidadLibrosPrestados() );//D. 
-            Application.Run(new ConsultaPrestamoPorFecha() ); 
+            //Application.Run(new ConsultaPrestamoPorFecha() ); 
+            //Application.Run(new ConsultarValorMulta() ); 
 
 
         }
