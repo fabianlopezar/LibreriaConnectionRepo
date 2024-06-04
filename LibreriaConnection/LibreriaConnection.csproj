@@ -139,17 +139,17 @@
     <Compile Include="views\ConsultaPrestamoPorFecha.Designer.cs">
       <DependentUpon>ConsultaPrestamoPorFecha.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultarMultasSinPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ConsultarMultasSinPagar.Designer.cs">
+      <DependentUpon>ConsultarMultasSinPagar.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\ConsultarValorMulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\ConsultarValorMulta.Designer.cs">
       <DependentUpon>ConsultarValorMulta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="views\Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="views\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="views\PrincipalAdministrador.cs">
       <SubType>Form</SubType>
@@ -280,11 +280,11 @@
     <EmbeddedResource Include="views\ConsultaPrestamoPorFecha.resx">
       <DependentUpon>ConsultaPrestamoPorFecha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\ConsultarMultasSinPagar.resx">
+      <DependentUpon>ConsultarMultasSinPagar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\ConsultarValorMulta.resx">
       <DependentUpon>ConsultarValorMulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="views\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\PrincipalAdministrador.resx">
       <DependentUpon>PrincipalAdministrador.cs</DependentUpon>

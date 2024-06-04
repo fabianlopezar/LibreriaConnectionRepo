@@ -250,7 +250,7 @@ C:\Users\Nicolas Donneis\OneDrive\Desktop\Repo\LibreriaConnectionRepo\LibreriaCo
 C:\Users\Nicolas Donneis\OneDrive\Desktop\Repo\LibreriaConnectionRepo\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAutores.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.PrincipalAutores.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UIConsultarCantidadLibrosPrestados.resources
-C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.Login.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.UILogin.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.ConsultaPrestamoPorFecha.resources
 C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.ConsultarValorMulta.resources
+C:\Users\INTEL i 7\source\repos\LibreriaConnection\LibreriaConnection\obj\Debug\LibreriaConnection.views.ConsultarMultasSinPagar.resources

@@ -39,5 +39,32 @@ namespace LibreriaConnection.views
         {
             AbrirForm(new UIUpdateAutores());          
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new UIInsertCuenta());          
+
+        }
+
+        private void PrincipalAutores_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new UIConsultarLibroCategoria());          
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //ConsultarValorMulta
+            AbrirForm(new ConsultarValorMulta());          
+        }
     }
 }

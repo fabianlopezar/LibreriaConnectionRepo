@@ -138,7 +138,7 @@ namespace LibreriaConnection.views
 
         private void button17_Click(object sender, EventArgs e)
         {
-           AbrirForm(new UIUpdateCuentas());
+           AbrirForm(new UIUpdateAutores());
         }
 
         private void timer3_Tick(object sender, EventArgs e)

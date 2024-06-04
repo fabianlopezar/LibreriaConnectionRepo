@@ -65,7 +65,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(406, 492);
+            this.button2.Location = new System.Drawing.Point(25, 389);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 50);
             this.button2.TabIndex = 78;
@@ -107,7 +107,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(809, 111);
+            this.label6.Location = new System.Drawing.Point(683, 107);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 24);
             this.label6.TabIndex = 71;
@@ -117,7 +117,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(593, 111);
+            this.label4.Location = new System.Drawing.Point(546, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 24);
             this.label4.TabIndex = 69;
@@ -171,7 +171,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(734, 151);
+            this.monthCalendar1.Location = new System.Drawing.Point(687, 140);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 85;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.SelectDate);
@@ -227,7 +227,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(531, 138);
+            this.pictureBox1.Location = new System.Drawing.Point(484, 140);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(191, 175);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -238,7 +238,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(568, 322);
+            this.button1.Location = new System.Drawing.Point(521, 324);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 50);
             this.button1.TabIndex = 92;

@@ -17,6 +17,11 @@ namespace LibreriaConnection
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+
+//            Application.Run(new UILogin());
+
+
             //-------------------- inserts -------------------------------
             //Application.Run(new UIInsertLibro() ); //Funciona
             //Application.Run(new UIInsertAutores()) ; //Funciona

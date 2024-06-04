@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibreriaConnection.views
 {
-    public partial class Login : Form
+    public partial class ConsultarMultasSinPagar : Form
     {
-        public Login()
+        public ConsultarMultasSinPagar()
         {
             InitializeComponent();
         }
