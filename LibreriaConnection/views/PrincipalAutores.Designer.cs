@@ -66,7 +66,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(141, 76);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(877, 462);
+            this.panel1.Size = new System.Drawing.Size(1107, 462);
             this.panel1.TabIndex = 7;
             // 
             // flowLayoutPanel1
@@ -184,8 +184,9 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(130, 36);
             this.button9.TabIndex = 15;
-            this.button9.Text = "G) H)";
+            this.button9.Text = "Pago Total";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button5
             // 
@@ -265,7 +266,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 558);
+            this.ClientSize = new System.Drawing.Size(1336, 558);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);

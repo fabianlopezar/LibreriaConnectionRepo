@@ -65,6 +65,15 @@ namespace LibreriaConnection.controller
 
             return listaMultas;
         }
+        internal List<Multas> ConsultaTotalPagado(string fecha1, string fecha2, int idCuenta)
+        {
+            List<Multas> listaMultas = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = $"SELECT SUM(m.valorAPagar) AS totalValorAPagar FROM cuentas c INNER JOIN prestamos p ON c.idCuenta = p.idCuentaPrestamo INNER JOIN multas m ON p.idCuentaPrestamo = m.idPrestamoMulta WHERE m.estaPagado = 1 AND m.fechaPago BETWEEN '{fecha1}' AND '{fecha2}' AND c.idCuenta = {idCuenta};";
+            listaMultas = connect.ConsultarTotalPagado(sql);
+
+            return listaMultas;
+        }
         internal List<Multas> ConsultarValorMulta(int idCuenta)
         {
             List<Multas> listaMultas = null;

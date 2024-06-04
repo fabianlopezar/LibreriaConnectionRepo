@@ -586,6 +586,33 @@ namespace LibreriaConnection.models
             }
             return listaMultas;
         }
+        internal List<Multas> ConsultarTotalPagado(string sql)
+        {
+            List<Multas> listaMultas = new List<Multas>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        double totalPago= reader.GetDouble(0);// Leo la posicion.                        
+                        listaMultas.Add(new Multas(totalPago));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect (ConsultarLibrosPrestadosEntreFechas): " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaMultas;
+        }
         internal List<Multas> ConsultarValorMulta(string sql)
         {
             List<Multas> listaMultas = new List<Multas>();

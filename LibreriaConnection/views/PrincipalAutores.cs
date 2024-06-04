@@ -77,5 +77,11 @@ namespace LibreriaConnection.views
             AbrirForm(new ConsultarPagoEntreFechas());          
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new ConsultarTotalPagado());          
+
+        }
     }
 }
