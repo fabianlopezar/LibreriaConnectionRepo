@@ -19,9 +19,20 @@ namespace LibreriaConnection.models
         {
         }
 
+        public Multas(int idMultas)
+        {
+            this.idMultas = idMultas;
+        }
+
         public Multas(string fechaInicio)
         {
             this.fechaInicio = fechaInicio;
+        }
+
+        public Multas(int idMultas, double valorAPagar)
+        {
+            this.idMultas = idMultas;
+            this.valorAPagar = valorAPagar;
         }
 
         public Multas(int idMultas, string fechaInicio)

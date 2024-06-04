@@ -145,6 +145,12 @@
     <Compile Include="views\ConsultarMultasSinPagar.Designer.cs">
       <DependentUpon>ConsultarMultasSinPagar.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultarPagoEntreFechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ConsultarPagoEntreFechas.Designer.cs">
+      <DependentUpon>ConsultarPagoEntreFechas.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\ConsultarValorMulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\ConsultarMultasSinPagar.resx">
       <DependentUpon>ConsultarMultasSinPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ConsultarPagoEntreFechas.resx">
+      <DependentUpon>ConsultarPagoEntreFechas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\ConsultarValorMulta.resx">
       <DependentUpon>ConsultarValorMulta.cs</DependentUpon>

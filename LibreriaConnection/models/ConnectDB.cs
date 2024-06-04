@@ -559,6 +559,33 @@ namespace LibreriaConnection.models
             }
             return listaLibros;
         }
+        internal List<Multas> ConsultarMultasPagadasEntreFechas(string sql)
+        {
+            List<Multas> listaMultas = new List<Multas>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int idMulta = reader.GetInt32(0);// Leo la posicion.                        
+                        listaMultas.Add(new Multas(idMulta));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect (ConsultarLibrosPrestadosEntreFechas): " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaMultas;
+        }
         internal List<Multas> ConsultarValorMulta(string sql)
         {
             List<Multas> listaMultas = new List<Multas>();
@@ -573,6 +600,34 @@ namespace LibreriaConnection.models
                     {
                         double _titulo = reader.GetDouble(0);// Leo la posicion.                        
                         listaMultas.Add(new Multas(_titulo));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect (: " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaMultas;
+        }
+        internal List<Multas> ConsultarMultaSinPagar(string sql)
+        {
+            List<Multas> listaMultas = new List<Multas>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int idMulta = reader.GetInt32(0);// Leo la posicion.                        
+                        double valorPagar= reader.GetDouble(3);// Leo la posicion.                        
+                        listaMultas.Add(new Multas(idMulta, valorPagar));// agrego a la lista de libros prestados.
                     }
                 }
             }

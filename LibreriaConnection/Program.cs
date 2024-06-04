@@ -44,8 +44,8 @@ namespace LibreriaConnection
             //Application.Run(new UIUpdateLibro() );
 
             //-------------------- Principales -------------------------------           
-            Application.Run(new PrincipalAdministrador() );
-            //Application.Run(new PrincipalAutores());
+            //Application.Run(new PrincipalAdministrador() );
+            Application.Run(new PrincipalAutores());
 
             //-------------------- Consultas -------------------------------           
             //Application.Run(new UIConsultarLibrosLector() ); //A. & F.) Se requiere consultar en algún momento, los libros que tiene actualmente en préstamo un lector

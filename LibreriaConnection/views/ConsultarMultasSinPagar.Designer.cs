@@ -60,6 +60,7 @@
             this.Controls.Add(this.label6);
             this.Name = "ConsultarMultasSinPagar";
             this.Text = "ConsultarMultasSinPagar";
+            this.Load += new System.EventHandler(this.ConsultarMultasSinPagar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
