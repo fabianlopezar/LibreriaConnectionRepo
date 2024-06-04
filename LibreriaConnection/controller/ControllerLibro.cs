@@ -27,7 +27,8 @@ namespace LibreriaConnection.controller
         internal bool InsertLibroImage(Libros objLibro)
         {
             bool result = false;
-            int disponibleInt = 0; if (objLibro.Disponible)
+            int disponibleInt = 0;
+            if (objLibro.Disponible)
             {
                 disponibleInt = 1;
             }
@@ -35,7 +36,7 @@ namespace LibreriaConnection.controller
             {
                 disponibleInt = 0;
             }
-            
+
             string sql = "insert into libros(titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro) values('" + objLibro.Titulo + "', @fotoLibro, '" + objLibro.CodigoISBN + "', '" + disponibleInt + "', " + objLibro.CantidadEjemplares + ", '" + objLibro.FechaCreacion + "', " + objLibro.IdEditorialLibro + ", " + objLibro.IdCategoriaLibro + ", " + objLibro.IdAdministradorLibro + ");";
             ConnectDB connect = new ConnectDB();
             result = connect.ExecuteQueryImage(sql, objLibro.Imagen);
@@ -65,12 +66,12 @@ namespace LibreriaConnection.controller
                 disponibleInt = 0;
             }
             Console.WriteLine("Soy la imagen" + libro.Imagen);
-            
+
             string sql = "UPDATE libros SET titulo='" + libro.Titulo + "', imagen= @fotoLibro  , codigoISBN='" + libro.CodigoISBN + "', disponible=" + disponibleInt + ", cantidadEjemplares=" + libro.CantidadEjemplares + ", fechaCreacion='" + libro.FechaCreacion + "', idEditorialLibro=" + libro.IdEditorialLibro + ", idCategoriaLibro=" + libro.IdCategoriaLibro + ", idAdministradorLibro=" + libro.IdAdministradorLibro + " WHERE idLibro=" + libro.IdLibro;
             ConnectDB connect = new ConnectDB();
             //result = connect.ExecuteQueryImage(sql, objLibro.Imagen);
             //result= connect.ExecuteQuery(sql);
-            result= connect.ExecuteQueryImage(sql,libro.Imagen);
+            result = connect.ExecuteQueryImage(sql, libro.Imagen);
             return result;
         }
     }

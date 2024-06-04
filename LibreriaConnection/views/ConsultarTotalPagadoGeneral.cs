@@ -12,33 +12,14 @@ using LibreriaConnection.controller;
 
 namespace LibreriaConnection.views
 {
-    public partial class ConsultarTotalPagado : Form
+    public partial class ConsultarTotalPagadoGeneral : Form
     {
-        string fecha1;
-        string fecha2;
         string nombreCuenta;
         List<Cuentas> listaCuentas = null;
         List<Multas> listaMultas = null;
-        public ConsultarTotalPagado()
+        public ConsultarTotalPagadoGeneral()
         {
             InitializeComponent();
-        }
-
-        private void FechaSelecinada1(object sender, DateRangeEventArgs e)
-        {
-            DateTime date = monthCalendar1.SelectionStart;
-            fecha1 = date.ToString("yyyy-MM-dd");
-        }
-
-        private void FechaSeleccionada2(object sender, DateRangeEventArgs e)
-        {
-            DateTime date = monthCalendar2.SelectionStart;
-            fecha2 = date.ToString("yyyy-MM-dd");
-        }
-
-        private void CuentaSelecionada(object sender, EventArgs e)
-        {
-            nombreCuenta = comboBox1.GetItemText(comboBox1.SelectedItem);
         }
 
         private void Consultar(object sender, EventArgs e)
@@ -49,6 +30,11 @@ namespace LibreriaConnection.views
             {
                 comboBox1.Items.Add(listaCuentas[i].Nombre1Cuenta);
             }
+        }
+
+        private void CuentaSelecionada(object sender, EventArgs e)
+        {
+            nombreCuenta = comboBox1.GetItemText(comboBox1.SelectedItem);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,9 +51,8 @@ namespace LibreriaConnection.views
             //-----------------------------
             ControllerPrestamo controllerPrestamo = new ControllerPrestamo();
             try
-            {
-             //   listaMultas = controllerPrestamo.ConsultarMultasPagadasEntreFechas(fecha1, fecha2, idCuenta);
-                listaMultas = controllerPrestamo.ConsultaTotalPagadoEntreFechas(fecha1, fecha2, idCuenta);
+            {                
+                listaMultas = controllerPrestamo.ConsultaTotalPagadoGeneral( idCuenta);
             }
             catch (Exception ex)
             {
@@ -83,16 +68,6 @@ namespace LibreriaConnection.views
                 tabla.Rows.Add(fila);
             }
             dataGridView2.DataSource = tabla;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

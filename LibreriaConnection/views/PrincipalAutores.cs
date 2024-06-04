@@ -75,12 +75,26 @@ namespace LibreriaConnection.views
         private void button5_Click(object sender, EventArgs e)
         {
             AbrirForm(new ConsultarPagoEntreFechas());          
-
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             AbrirForm(new ConsultarTotalPagado());          
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new ConsultarTotalPagadoGeneral());          
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AbrirForm(new ConsultarTotalPagadoGeneral());          
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new UIInsertPrestamo());          
 
         }
     }

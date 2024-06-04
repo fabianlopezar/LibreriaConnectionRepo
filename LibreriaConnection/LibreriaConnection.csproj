@@ -157,6 +157,12 @@
     <Compile Include="views\ConsultarTotalPagado.Designer.cs">
       <DependentUpon>ConsultarTotalPagado.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ConsultarTotalPagadoGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ConsultarTotalPagadoGeneral.Designer.cs">
+      <DependentUpon>ConsultarTotalPagadoGeneral.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\ConsultarValorMulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,12 @@
     </Compile>
     <Compile Include="views\UIInsertLibro.Designer.cs">
       <DependentUpon>UIInsertLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\UIInsertPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIInsertPrestamo.Designer.cs">
+      <DependentUpon>UIInsertPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="views\UIInsertTelefono.cs">
       <SubType>Form</SubType>
@@ -301,6 +313,9 @@
     <EmbeddedResource Include="views\ConsultarTotalPagado.resx">
       <DependentUpon>ConsultarTotalPagado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\ConsultarTotalPagadoGeneral.resx">
+      <DependentUpon>ConsultarTotalPagadoGeneral.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\ConsultarValorMulta.resx">
       <DependentUpon>ConsultarValorMulta.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertLibro.resx">
       <DependentUpon>UIInsertLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UIInsertPrestamo.resx">
+      <DependentUpon>UIInsertPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIInsertTelefono.resx">
       <DependentUpon>UIInsertTelefono.cs</DependentUpon>

@@ -47,6 +47,7 @@
             this.button18 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -81,13 +82,14 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button8);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.MaximumSize = new System.Drawing.Size(130, 121);
             this.panel2.MinimumSize = new System.Drawing.Size(130, 42);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(130, 85);
+            this.panel2.Size = new System.Drawing.Size(130, 121);
             this.panel2.TabIndex = 15;
             // 
             // button7
@@ -128,7 +130,7 @@
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button13);
             this.panel3.Controls.Add(this.button18);
-            this.panel3.Location = new System.Drawing.Point(3, 94);
+            this.panel3.Location = new System.Drawing.Point(3, 130);
             this.panel3.MaximumSize = new System.Drawing.Size(130, 338);
             this.panel3.MinimumSize = new System.Drawing.Size(130, 42);
             this.panel3.Name = "panel3";
@@ -160,6 +162,7 @@
             this.button11.TabIndex = 17;
             this.button11.Text = "Autor";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -171,20 +174,21 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(130, 36);
             this.button10.TabIndex = 16;
-            this.button10.Text = "J)";
+            this.button10.Text = "Pago Total";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.button9.Dock = System.Windows.Forms.DockStyle.Top;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(0, 192);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(130, 36);
             this.button9.TabIndex = 15;
-            this.button9.Text = "Pago Total";
+            this.button9.Text = "Pago Total Entre Fechas";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -262,6 +266,20 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 84);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 36);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Prestamo";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // PrincipalAutores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,5 +320,6 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
     }
 }

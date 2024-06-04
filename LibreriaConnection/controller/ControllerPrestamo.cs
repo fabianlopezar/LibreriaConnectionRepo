@@ -65,12 +65,21 @@ namespace LibreriaConnection.controller
 
             return listaMultas;
         }
-        internal List<Multas> ConsultaTotalPagado(string fecha1, string fecha2, int idCuenta)
+        internal List<Multas> ConsultaTotalPagadoEntreFechas(string fecha1, string fecha2, int idCuenta)
         {
             List<Multas> listaMultas = null;
             ConnectDB connect = new ConnectDB();
             string sql = $"SELECT SUM(m.valorAPagar) AS totalValorAPagar FROM cuentas c INNER JOIN prestamos p ON c.idCuenta = p.idCuentaPrestamo INNER JOIN multas m ON p.idCuentaPrestamo = m.idPrestamoMulta WHERE m.estaPagado = 1 AND m.fechaPago BETWEEN '{fecha1}' AND '{fecha2}' AND c.idCuenta = {idCuenta};";
-            listaMultas = connect.ConsultarTotalPagado(sql);
+            listaMultas = connect.ConsultarTotalPagadoEntreFechas(sql);
+
+            return listaMultas;
+        }
+        internal List<Multas> ConsultaTotalPagadoGeneral(int idCuenta)
+        {
+            List<Multas> listaMultas = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = $"SELECT SUM(m.valorAPagar) AS totalValorAPagar FROM cuentas c INNER JOIN prestamos p ON c.idCuenta = p.idCuentaPrestamo INNER JOIN multas m ON p.idCuentaPrestamo = m.idPrestamoMulta WHERE m.estaPagado = 1 AND m.fechaPago  AND c.idCuenta = {idCuenta};";
+            listaMultas = connect.ConsultarTotalPagadoEntreFechas(sql);
 
             return listaMultas;
         }
@@ -91,6 +100,24 @@ namespace LibreriaConnection.controller
             listaMultas = connect.ConsultarMultaSinPagar(sql);
 
             return listaMultas;
+        }
+        internal bool InsertPrestamo(Prestamos prestamo)
+        {
+            bool result = false;
+            int estaVencido = 0;
+            if (prestamo.EstaVencido)
+            {
+                estaVencido = 1;
+            }
+            else
+            {
+                estaVencido = 0;
+            }
+            string sql = "insert into prestamos(fechaPrestamo, fechaDevolucion, estaVencido, idCuentaPrestamo) values('" + prestamo.FechaPrestamo + "', '" + prestamo.FechaDevolucion + "', '" + estaVencido + "', '" + prestamo.IdCuentaPrestamo + "')";
+            ConnectDB connect = new ConnectDB();
+            result = connect.ExecuteQuery(sql);
+            return result;
+
         }
     }
 }

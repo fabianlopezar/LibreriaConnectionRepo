@@ -586,7 +586,7 @@ namespace LibreriaConnection.models
             }
             return listaMultas;
         }
-        internal List<Multas> ConsultarTotalPagado(string sql)
+        internal List<Multas> ConsultarTotalPagadoEntreFechas(string sql)
         {
             List<Multas> listaMultas = new List<Multas>();
             try
