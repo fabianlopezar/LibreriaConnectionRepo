@@ -119,5 +119,14 @@ namespace LibreriaConnection.controller
             return result;
 
         }
+        internal List<Prestamos> ConsultarUltimoPrestamoId()
+        {
+            List<Prestamos> listaPrestamos = null;
+            ConnectDB connect = new ConnectDB();
+            string sql = $"SELECT idPrestamo FROM libreria.prestamos;";
+            listaPrestamos = connect.ConsultarPrestamosId(sql);
+
+            return listaPrestamos;
+        }
     }
 }

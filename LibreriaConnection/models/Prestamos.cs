@@ -23,6 +23,11 @@ namespace LibreriaConnection.models
             this.fechaPrestamo = fechaPrestamo;
         }
 
+        public Prestamos(int idPrestamo)
+        {
+            this.idPrestamo = idPrestamo;
+        }
+
         public Prestamos(string fechaPrestamo, string fechaDevolucion, bool estaVencido, int idCuentaPrestamo) : this(fechaPrestamo)
         {
             this.fechaDevolucion = fechaDevolucion;

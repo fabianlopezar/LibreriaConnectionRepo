@@ -668,6 +668,34 @@ namespace LibreriaConnection.models
             }
             return listaMultas;
         }
+        internal List<Prestamos> ConsultarPrestamosId(string sql)
+        {
+            List<Prestamos> listaPrestamos = new List<Prestamos>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int idPrestamo = reader.GetInt32(0);// Leo la posicion.                        
+
+                        listaPrestamos.Add(new Prestamos(idPrestamo));// agrego a la lista de libros prestados.
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error en Connect (: " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaPrestamos;
+        }
         internal List<Libros> ConsultarTodosLosLibrosPrestados(string sql)
         {
             List<Libros> listaLibros = new List<Libros>();

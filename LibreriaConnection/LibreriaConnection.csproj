@@ -105,6 +105,7 @@
     <Compile Include="controller\ControllerCuentas.cs" />
     <Compile Include="controller\ControllerEditorial.cs" />
     <Compile Include="controller\ControllerLibro.cs" />
+    <Compile Include="controller\ControllerLibro_Prestamo.cs" />
     <Compile Include="controller\ControllerPrestamo.cs" />
     <Compile Include="controller\ControllerTelefono.cs" />
     <Compile Include="Form1.cs">
@@ -121,6 +122,7 @@
     <Compile Include="models\Cuentas.cs" />
     <Compile Include="models\Editoriales.cs" />
     <Compile Include="models\Libros.cs" />
+    <Compile Include="models\Libro_Prestamo.cs" />
     <Compile Include="models\Multas.cs" />
     <Compile Include="models\Paises.cs" />
     <Compile Include="models\Prestamos.cs" />

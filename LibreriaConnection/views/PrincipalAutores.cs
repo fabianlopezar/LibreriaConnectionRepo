@@ -89,7 +89,7 @@ namespace LibreriaConnection.views
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            AbrirForm(new ConsultarTotalPagadoGeneral());          
+            AbrirForm(new UIInsertPrestamo());
         }
 
         private void button11_Click(object sender, EventArgs e)
