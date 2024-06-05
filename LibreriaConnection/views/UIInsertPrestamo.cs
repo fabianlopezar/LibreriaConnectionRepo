@@ -80,7 +80,7 @@ namespace LibreriaConnection.views
             bool result = controllerPrestamo.InsertPrestamo(prestamo);
             if (result)
             {
-                MessageBox.Show("Prestamo Insert Correct");
+              //  MessageBox.Show("Prestamo Insert Correct");
             }
             else
             {
@@ -94,10 +94,10 @@ namespace LibreriaConnection.views
                 Prestamos ultimoPrestamo = listaPrestamosId[listaPrestamosId.Count - 1];
                 ultimoPrestamoID = ultimoPrestamo.IdPrestamo;
             }
-            MessageBox.Show("Soy id Prestamo: "+ ultimoPrestamoID);
+            //MessageBox.Show("Soy id Prestamo: "+ ultimoPrestamoID);
 
             int _idPrestamo = prestamo.IdPrestamo;
-            MessageBox.Show("Soy id Prestamo_Libro: "+idLibroPrestamo_Libro);
+         //   MessageBox.Show("Soy id Prestamo_Libro: "+idLibroPrestamo_Libro);
             Libro_Prestamo libro_Prestamo = new Libro_Prestamo(ultimoPrestamoID, idLibroPrestamo_Libro);
             ControllerLibro_Prestamo controllerLibro_Prestamo = new ControllerLibro_Prestamo();
 
@@ -109,11 +109,11 @@ namespace LibreriaConnection.views
 
             if (result2)
             {
-                MessageBox.Show("Prestamo_Libro Insert Correct");
+                MessageBox.Show("Pestamo creado correctamente");// que texto le modificarias aca para que quede mejor?
             }
             else
             {
-                MessageBox.Show("Prestamo_Libro Insert Incorrect");
+                MessageBox.Show("ERROR: Insert Incorrect: Seleccione una fecha de inicio y de final.");//ya
             }
 
 
