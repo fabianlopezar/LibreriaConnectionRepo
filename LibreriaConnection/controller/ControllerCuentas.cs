@@ -25,7 +25,8 @@ namespace LibreriaConnection.controller
         {            
             bool result = false;
 
-            string sql = $"INSERT INTO cuentas (idCuenta, nombre1Cuenta, nombre2Cuenta, apellido1Cuenta, apellido2Cuenta, direccionCuenta, foto, fechaNacimiento, contraseniaCuenta) VALUES ({cuenta.IdCuenta}, '{cuenta.Nombre1Cuenta}', '{cuenta.Nombre2Cuenta}', '{cuenta.Apellido1Cuenta}', '{cuenta.Apellido2Cuenta}', '{cuenta.DireccionCuenta}', @fotoCuenta, '{cuenta.FechaNacimiento}', '{cuenta.ContraseniaCuenta}')";
+            string sql = $"CALL InsertarCuenta({cuenta.IdCuenta}, '{cuenta.Nombre1Cuenta}', '{cuenta.Nombre2Cuenta}', '{cuenta.Apellido1Cuenta}', '{cuenta.Apellido2Cuenta}', '{cuenta.DireccionCuenta}', @fotoCuenta, '{cuenta.FechaNacimiento}', '{cuenta.ContraseniaCuenta}');";
+            
             ConnectDB objCBD = new ConnectDB();
             result = objCBD.ExecuteQueryImageCuenta(sql,cuenta.Foto);
          

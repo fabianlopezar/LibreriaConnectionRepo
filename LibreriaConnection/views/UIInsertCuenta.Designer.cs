@@ -49,6 +49,12 @@ namespace LibreriaConnection.views
             this.button2 = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +62,7 @@ namespace LibreriaConnection.views
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(349, 243);
+            this.button1.Location = new System.Drawing.Point(394, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 30);
             this.button1.TabIndex = 18;
@@ -167,7 +173,7 @@ namespace LibreriaConnection.views
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(333, 89);
+            this.pictureBox1.Location = new System.Drawing.Point(378, 89);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(158, 148);
             this.pictureBox1.TabIndex = 27;
@@ -185,7 +191,7 @@ namespace LibreriaConnection.views
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(374, 55);
+            this.label8.Location = new System.Drawing.Point(419, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 29);
             this.label8.TabIndex = 29;
@@ -213,7 +219,7 @@ namespace LibreriaConnection.views
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(668, 288);
+            this.button2.Location = new System.Drawing.Point(713, 288);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 32);
             this.button2.TabIndex = 32;
@@ -223,7 +229,7 @@ namespace LibreriaConnection.views
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(538, 89);
+            this.monthCalendar1.Location = new System.Drawing.Point(583, 89);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 87;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.FechaSeleccionada);
@@ -232,17 +238,83 @@ namespace LibreriaConnection.views
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(585, 55);
+            this.label3.Location = new System.Drawing.Point(630, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(164, 24);
             this.label3.TabIndex = 86;
             this.label3.Text = "Fecha Nacimiento";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(329, 55);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(17, 24);
+            this.label10.TabIndex = 88;
+            this.label10.Text = "*";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(329, 145);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(17, 24);
+            this.label11.TabIndex = 89;
+            this.label11.Text = "*";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(329, 239);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 24);
+            this.label12.TabIndex = 90;
+            this.label12.Text = "*";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(329, 285);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(17, 24);
+            this.label13.TabIndex = 91;
+            this.label13.Text = "*";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(525, 245);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 24);
+            this.label14.TabIndex = 92;
+            this.label14.Text = "*";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(843, 89);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(17, 24);
+            this.label15.TabIndex = 93;
+            this.label15.Text = "*";
             // 
             // UIInsertCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 455);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
@@ -293,5 +365,11 @@ namespace LibreriaConnection.views
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
     }
 }

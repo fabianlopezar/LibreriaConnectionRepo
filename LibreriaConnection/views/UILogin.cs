@@ -108,7 +108,8 @@ namespace LibreriaConnection.views
 
         private void ShowUserInterface()
         {
-            ConsultarValorMulta userForm = new ConsultarValorMulta(); //Aquí va el UI de la vista que va a tener el usuario, falta el prestamo
+            //ConsultarValorMulta userForm = new ConsultarValorMulta(); //Aquí va el UI de la vista que va a tener el usuario, falta el prestamo
+            PrincipalAutores userForm = new PrincipalAutores(); //Aquí va el UI de la vista que va a tener el usuario, falta el prestamo
             this.Hide();
             userForm.Show();
         }
