@@ -8,14 +8,14 @@ using LibreriaConnection.models;
 
 namespace LibreriaConnection.controller
 {
-    class ControllerLibro //min 50:00
+    class ControllerLibro 
     {
 
         internal List<Libros> SelectLibros()
         {
             List<Libros> listaLibros = null;
             ConnectDB connect = new ConnectDB();
-            string sql = "select * from libros;";
+            string sql = "CALL SeleccionarLibros();";
             listaLibros = connect.SelectLibros(sql);
             return listaLibros;
         }
@@ -37,17 +37,19 @@ namespace LibreriaConnection.controller
                 disponibleInt = 0;
             }
 
-            string sql = "insert into libros(titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro) values('" + objLibro.Titulo + "', @fotoLibro, '" + objLibro.CodigoISBN + "', '" + disponibleInt + "', " + objLibro.CantidadEjemplares + ", '" + objLibro.FechaCreacion + "', " + objLibro.IdEditorialLibro + ", " + objLibro.IdCategoriaLibro + ", " + objLibro.IdAdministradorLibro + ");";
+            //string sql = "insert into libros(titulo, imagen, codigoISBN, disponible, cantidadEjemplares, fechaCreacion, idEditorialLibro, idCategoriaLibro, idAdministradorLibro) values('" + objLibro.Titulo + "', @fotoLibro, '" + objLibro.CodigoISBN + "', '" + disponibleInt + "', " + objLibro.CantidadEjemplares + ", '" + objLibro.FechaCreacion + "', " + objLibro.IdEditorialLibro + ", " + objLibro.IdCategoriaLibro + ", " + objLibro.IdAdministradorLibro + ");";
+            string sql = $"CALL InsertarLibro('{objLibro.Titulo}', @fotoLibro, '{objLibro.CodigoISBN}', {disponibleInt}, {objLibro.CantidadEjemplares}, '{objLibro.FechaCreacion}', {objLibro.IdEditorialLibro}, {objLibro.IdCategoriaLibro}, {objLibro.IdAdministradorLibro});";           ;
             ConnectDB connect = new ConnectDB();
             result = connect.ExecuteQueryImage(sql, objLibro.Imagen);
             return result;
         }
 
-        internal List<Libros> ConsultarLibroCategoria(int idCategoria)//------------ hasta aui llege
+        internal List<Libros> ConsultarLibroCategoria(int idCategoria)
         {
             List<Libros> listaLibros = null;
             ConnectDB connect = new ConnectDB();
-            string sql = "select l.idLibro, l.titulo, l.idCategoriaLibro, c.idCategoria FROM libros l inner  JOIN categorias c ON l.idCategoriaLibro=c.idCategoria Where C.idCategoria=" + idCategoria + ";";
+            string sql = $"CALL SeleccionarLibrosPorCategoria({idCategoria});";
+
 
             listaLibros = connect.ConsultaLibroCategoria(sql);
 
@@ -65,9 +67,9 @@ namespace LibreriaConnection.controller
             {
                 disponibleInt = 0;
             }
-            Console.WriteLine("Soy la imagen" + libro.Imagen);
+            //Console.WriteLine("Soy la imagen" + libro.Imagen);
 
-            string sql = "UPDATE libros SET titulo='" + libro.Titulo + "', imagen= @fotoLibro  , codigoISBN='" + libro.CodigoISBN + "', disponible=" + disponibleInt + ", cantidadEjemplares=" + libro.CantidadEjemplares + ", fechaCreacion='" + libro.FechaCreacion + "', idEditorialLibro=" + libro.IdEditorialLibro + ", idCategoriaLibro=" + libro.IdCategoriaLibro + ", idAdministradorLibro=" + libro.IdAdministradorLibro + " WHERE idLibro=" + libro.IdLibro;
+            string sql = $"CALL ActualizarLibro({libro.IdLibro}, '{libro.Titulo}', @fotoLibro, '{libro.CodigoISBN}', {disponibleInt}, {libro.CantidadEjemplares}, '{libro.FechaCreacion}', {libro.IdEditorialLibro}, {libro.IdCategoriaLibro}, {libro.IdAdministradorLibro});";            ;
             ConnectDB connect = new ConnectDB();
             //result = connect.ExecuteQueryImage(sql, objLibro.Imagen);
             //result= connect.ExecuteQuery(sql);

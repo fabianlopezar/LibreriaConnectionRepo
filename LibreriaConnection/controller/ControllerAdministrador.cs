@@ -9,11 +9,11 @@ namespace LibreriaConnection.controller
 {
     class ControllerAdministrador
     {
-        internal bool InsertAdministrador(Administradores objAdministrador)
+        internal bool InsertAdministrador(Administradores admin)
         {
             bool result = false;
-            string sql = "insert  into administradores (nombre1Administrador, nombre2Administrador,apellido1Administrador,apellido2Administrador,correo,contraseniaAdministrador)" +
-                         " values('" + objAdministrador.Nombre1Administrador + "' , '" + objAdministrador.Nombre2Administrador + "', '" + objAdministrador.Apellido1Administrador + "' ,'" + objAdministrador.Apellido2Administrador + "', '" + objAdministrador.Correo + "', +'" + objAdministrador.ContraseniaAdministrador + "');";
+            //string sql = $"CALL InsertarAdministrador('Nombre1', 'Nombre2', 'Apellido1', 'Apellido2', 'correo@example.com', 'contrasenia');";
+            string sql = $"CALL InsertarAdministrador('{admin.Nombre1Administrador}', '{admin.Nombre2Administrador}', '{admin.Apellido1Administrador}', '{admin.Apellido2Administrador}', '{admin.Correo}', '{admin.ContraseniaAdministrador}');";
 
             ConnectDB objConnect = new ConnectDB();
             result = objConnect.ExecuteQuery(sql);
