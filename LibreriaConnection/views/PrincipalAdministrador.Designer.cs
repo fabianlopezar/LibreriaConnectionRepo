@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrincipalAdministrador));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -52,6 +53,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelOpciones.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -78,8 +80,8 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.panelOpciones);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.panelOpciones);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -93,7 +95,7 @@
             this.panelOpciones.Controls.Add(this.button16);
             this.panelOpciones.Controls.Add(this.button15);
             this.panelOpciones.Controls.Add(this.button14);
-            this.panelOpciones.Location = new System.Drawing.Point(3, 3);
+            this.panelOpciones.Location = new System.Drawing.Point(3, 55);
             this.panelOpciones.MaximumSize = new System.Drawing.Size(130, 157);
             this.panelOpciones.MinimumSize = new System.Drawing.Size(130, 42);
             this.panelOpciones.Name = "panelOpciones";
@@ -161,7 +163,7 @@
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button8);
-            this.panel2.Location = new System.Drawing.Point(3, 56);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.MaximumSize = new System.Drawing.Size(130, 121);
             this.panel2.MinimumSize = new System.Drawing.Size(130, 42);
             this.panel2.Name = "panel2";
@@ -339,11 +341,23 @@
             this.timer3.Interval = 15;
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Enabled = false;
+            this.richTextBox1.Location = new System.Drawing.Point(1074, 63);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(349, 309);
+            this.richTextBox1.TabIndex = 7;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richTextBox1.Visible = false;
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
             // PrincipalAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 525);
+            this.ClientSize = new System.Drawing.Size(1484, 525);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -383,5 +397,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

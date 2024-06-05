@@ -65,6 +65,7 @@ namespace LibreriaConnection.views
                     idCiudad = listaCiudades[i].IdCiudad;
                 }
             }
+  
             Autores objAutor = new Autores(idAutor, nombre1, nombre2, apellido1, apellido2, direccion, telefono,idCiudad);
             bool result = objControllerAutor.UpdateAutor(objAutor);
             if (result)

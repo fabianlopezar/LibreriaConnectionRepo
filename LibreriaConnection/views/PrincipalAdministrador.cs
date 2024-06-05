@@ -88,10 +88,11 @@ namespace LibreriaConnection.views
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+      
             if (isCollapsed)
             {
                 panel2.Height += 10;
-
+                
                 if (panel2.Size == panel2.MaximumSize)
                 {
                     timer2.Stop();
@@ -146,7 +147,7 @@ namespace LibreriaConnection.views
             if (isCollapsed)
             {
                 panel3.Height += 10;
-
+                richTextBox1.Visible = true;
                 if (panel3.Size == panel3.MaximumSize)
                 {
                     timer3.Stop();
@@ -156,6 +157,7 @@ namespace LibreriaConnection.views
             else
             {
                 panel3.Height -= 10;
+                richTextBox1.Visible = false;
                 if (panel3.Size == panel3.MinimumSize)
                 {
                     timer3.Stop();
@@ -201,6 +203,11 @@ namespace LibreriaConnection.views
         private void button10_Click(object sender, EventArgs e)
         {
            AbrirForm(new ConsultarValorMulta());
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

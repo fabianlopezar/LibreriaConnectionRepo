@@ -126,4 +126,24 @@
   <metadata name="timer3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>191, 17</value>
   </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>a. consultar los libros que tiene actualmente en préstamo un lector.
+
+b. Consultar todos los títulos de libros que se encuentran actualmente en préstamo.
+
+c. Consultar los títulos de libros que se prestaron en una fecha determinada (por
+ejemplo: los que se prestaron desde el 21 de enero de 2006 al 23 de noviembre del
+2008).
+
+d. Consultar cuales libros pertenecen a una categoría.
+
+e. Consultar los libros que no han regresado, sabiendo que la fecha de préstamo ya
+venció.
+
+f. Consultar la cantidad de libros prestados por un lector.
+
+g. Consultar cual es la cantidad de libros en préstamos actuales.
+
+h. Consultar cual es la cantidad de libros en préstamos vencidos. </value>
+  </data>
 </root>
